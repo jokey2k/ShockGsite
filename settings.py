@@ -135,7 +135,8 @@ INSTALLED_APPS = (
     'django_authopenid',
     #'debug_toolbar',
     'polls',
-    'gamesquad'
+    'gamesquad',
+    'news'
 )
 
 try:

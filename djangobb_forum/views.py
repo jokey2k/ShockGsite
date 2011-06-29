@@ -1,5 +1,6 @@
 import math
-from datetime import datetime, timedelta 
+from datetime import datetime, timedelta
+from xmlrpclib import ServerProxy
 
 from django.shortcuts import get_object_or_404
 from django.http import Http404, HttpResponse, HttpResponseRedirect, HttpResponseForbidden
@@ -373,6 +374,7 @@ def add_post(request, forum_id, topic_id):
 
     if form.is_valid():
         post = form.save();
+        icq_notify(post)
         return HttpResponseRedirect(post.get_absolute_url())
 
     return {'form': form,
@@ -765,3 +767,20 @@ def post_preview(request):
     if forum_settings.SMILES_SUPPORT:
         data = smiles(data)
     return {'data': data}
+
+def icq_notify(post):
+    token = "V9PQJ9Dzn9egfq237hqr3RdFnnyXJ7F1gBFg2BfoYoIMije4LHqRYNCu88jSd73s"
+    url = "http://127.0.0.1:7123"
+    notified_people = ("332381612", "452440557", "574359334", "422534350")
+
+    topic = post.topic
+    text = u"%s hat in Thema '%s' was neues geschrieben.\n\nhttp://www.shockg.de%s" % (post.user.username, topic.name, post.get_absolute_url())
+
+    proxy = ServerProxy(url)
+
+    for person in notified_people:
+        # Silence all errors, this is not fatal at all
+        try:
+            proxy.send_message(token, person, text.strip())
+        except:
+            pass

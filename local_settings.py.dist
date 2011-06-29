@@ -1,0 +1,46 @@
+# -*- coding: utf-8 -*-
+import os.path
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': 'django',                      # Or path to database file if using sqlite3.
+        'USER': 'django',                      # Not used with sqlite3.
+        'PASSWORD': '',                  # Not used with sqlite3.
+        'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+LANGUAGE_CODE = 'de-de'
+
+TIME_ZONE = 'Europe/Berlin'
+
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = '/tmp' # change this to a proper location
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#EMAIL_HOST="127.0.0.1"
+
+# Clan Template is preferred
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+TEMPLATE_DIRS = (
+#  >>>> Add your template path here _AT TOP_, f.ex. <<<<
+#   os.path.join(PROJECT_ROOT, 'themes/shockg/templates'),
+    os.path.join(PROJECT_ROOT, 'templates'),
+)
+
+# In addition to per-app directories, this is also considered
+STATICFILES_DIRS = (
+#  >>>> Add your templates' static element path here, f.ex. <<<<
+    os.path.join(PROJECT_ROOT, 'themes/shockg/static'),
+)
+
+# Outputfolder for ./manage.py collectstatic
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static_tmp')
+
+# Path or full URL which is placed in templates
+STATIC_URL = "/static/"
+
+# Recaptcha Protection keys
+RECAPTCHA_PUBKEY = ''
+RECAPTCHA_PRIVKEY = ''

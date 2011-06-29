@@ -39,6 +39,7 @@ urlpatterns = patterns('',
     (r'^board/', include('djangobb_forum.urls', namespace='djangobb')),
     (r'^polls/', include('polls.urls')),
     (r'', include('gamesquad.urls'))
+    (r'^shoutbox/', include('shoutbox.urls')),
     (r'^news/', include('news.urls')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

@@ -160,9 +160,16 @@ TEMPLATE_CONTEXT_PROCESSORS = (
 )
 
 # Haystack settings
-HAYSTACK_SITECONF = 'search_sites'
-HAYSTACK_SEARCH_ENGINE = 'whoosh'
-HAYSTACK_WHOOSH_PATH = os.path.join(PROJECT_ROOT, 'djangobb_index')
+HAYSTACK_CONNECTIONS = {
+	'default': {
+	    'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+	    'PATH': os.path.join(PROJECT_ROOT, 'djangobb_index'),
+		'STORAGE': 'file',
+	    'POST_LIMIT': 128 * 1024 * 1024,
+	    'INCLUDE_SPELLING': True,
+	    'BATCH_SIZE': 100,
+	},
+}
 
 # Account settings
 ACCOUNT_ACTIVATION_DAYS = 10

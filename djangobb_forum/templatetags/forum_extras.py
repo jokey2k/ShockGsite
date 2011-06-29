@@ -234,12 +234,6 @@ def online(user):
 
 
 @register.filter
-def pm_unreads(user):
-    if forum_settings.PM_SUPPORT:
-        return inbox_count_for(user)
-    return None
-
-@register.filter
 def attachment_link(attach):
     from django.template.defaultfilters import filesizeformat
     if attach.content_type in ['image/png', 'image/gif', 'image/jpeg']:

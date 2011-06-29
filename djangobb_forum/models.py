@@ -278,6 +278,7 @@ class Profile(models.Model):
     msn = models.CharField(_('MSN'), max_length=80, blank=True)
     aim = models.CharField(_('AIM'), max_length=80, blank=True)
     yahoo = models.CharField(_('Yahoo'), max_length=80, blank=True)
+    xfire = models.CharField(_('Xfire'), max_length=80, blank=True)
     location = models.CharField(_('Location'), max_length=30, blank=True)
     signature = models.TextField(_('Signature'), blank=True, default='', max_length=forum_settings.SIGNATURE_MAX_LENGTH)
     time_zone = models.FloatField(_('Time zone'), choices=TZ_CHOICES, default=float(forum_settings.DEFAULT_TIME_ZONE))
@@ -290,13 +291,7 @@ class Profile(models.Model):
     privacy_permission = models.IntegerField(_('Privacy permission'), choices=PRIVACY_CHOICES, default=1)
     markup = models.CharField(_('Default markup'), max_length=15, default=forum_settings.DEFAULT_MARKUP, choices=MARKUP_CHOICES)
     post_count = models.IntegerField(_('Post count'), blank=True, default=0)
-    birthday = models.DateField(_('Birthday'), blank=True, auto_now_add=True)
-    COUNTRY_CHOICES = (
-        ('DE', _('Germany')),
-        ('CH', _('Switzerland')),
-        ('AT', _('Austria')),
-    )
-    country = models.CharField(max_length=2, choices=COUNTRY_CHOICES, default='DE')
+    birthday = models.DateField(_('Birthday'), blank=True, null=True)
 
     class Meta:
         verbose_name = _('Profile')

@@ -9,7 +9,7 @@ except ImportError:
 import random
 
 from django.db.models import OneToOneField
-from django.db.models.fields.related import SingleRelatedObjectDescriptor 
+from django.db.models.fields.related import SingleRelatedObjectDescriptor
 from django.db import models
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.serializers.json import DjangoJSONEncoder
@@ -102,9 +102,9 @@ class JSONField(models.TextField):
             pass
         return value
 
-    def get_db_prep_save(self, value):
+    def get_db_prep_save(self, value, connection):
         if value == "":
             return None
         if isinstance(value, dict):
             value = json.dumps(value, cls=DjangoJSONEncoder)
-        return super(JSONField, self).get_db_prep_save(value)
+        return super(JSONField, self).get_db_prep_save(value, connection)

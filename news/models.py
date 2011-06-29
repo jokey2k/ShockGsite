@@ -5,6 +5,8 @@ from django.utils.translation import ugettext_lazy as _
 
 from django.contrib.auth.models import User
 
+from news import settings as news_settings
+from news.fields import FramedImageField
 
 class NewsItem(models.Model):
     """One Newsitem"""
@@ -17,12 +19,14 @@ class NewsItem(models.Model):
     published = models.BooleanField(default=True)
     visible_from = models.DateTimeField(blank=True, null=True)
     visible_until = models.DateTimeField(blank=True, null=True)
+    bigimage = FramedImageField(_('Big News Display Image'), blank=True, default='', upload_to=news_settings.UPLOAD_TO, width=news_settings.BIGIMG_WIDTH, height=news_settings.BIGIMG_HEIGHT)
+    image = FramedImageField(_('Normal News Display Image'), blank=True, default='', upload_to=news_settings.UPLOAD_TO, width=news_settings.IMG_WIDTH, height=news_settings.IMG_HEIGHT)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     updated_author = models.ForeignKey(User, related_name='+')
 
     class Meta:
-        ordering = ['updated']
+        ordering = ['-updated']
 
     def is_visible(self):
         """will the current item be visible?"""
@@ -44,3 +48,6 @@ class NewsItem(models.Model):
     is_visible.short_description = 'Item visible?'
     is_visible.boolean = True
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('news.detail', [str(self.id)])

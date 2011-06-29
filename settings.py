@@ -176,8 +176,8 @@ HAYSTACK_WHOOSH_PATH = os.path.join(PROJECT_ROOT, 'djangobb_index')
 
 # Account settings
 ACCOUNT_ACTIVATION_DAYS = 10
-LOGIN_REDIRECT_URL = '/board/'
-LOGIN_URL = '/board/account/signin/'
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = '/account/signin/'
 
 #Cache settings
 CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True

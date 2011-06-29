@@ -204,30 +204,30 @@ def forum_equal_to(obj1, obj2):
 @register.filter
 def forum_authority(user):
     posts = user.forum_profile.post_count
-    if posts >= forum_settings.AUTHORITY_STEP_10: 
-        return mark_safe('<img src="%sforum/img/authority/vote10.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_9: 
-        return mark_safe('<img src="%sforum/img/authority/vote9.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_8: 
-        return mark_safe('<img src="%sforum/img/authority/vote8.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_7: 
-        return mark_safe('<img src="%sforum/img/authority/vote7.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_6: 
-        return mark_safe('<img src="%sforum/img/authority/vote6.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_5: 
-        return mark_safe('<img src="%sforum/img/authority/vote5.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_4: 
-        return mark_safe('<img src="%sforum/img/authority/vote4.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_3: 
-        return mark_safe('<img src="%sforum/img/authority/vote3.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_2: 
-        return mark_safe('<img src="%sforum/img/authority/vote2.gif" alt="" />' % (settings.MEDIA_URL))
-    elif posts >= forum_settings.AUTHORITY_STEP_1: 
-        return mark_safe('<img src="%sforum/img/authority/vote1.gif" alt="" />' % (settings.MEDIA_URL))
+    if posts >= forum_settings.AUTHORITY_STEP_10:
+        return mark_safe('<img src="%sforum/img/authority/vote10.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_9:
+        return mark_safe('<img src="%sforum/img/authority/vote9.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_8:
+        return mark_safe('<img src="%sforum/img/authority/vote8.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_7:
+        return mark_safe('<img src="%sforum/img/authority/vote7.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_6:
+        return mark_safe('<img src="%sforum/img/authority/vote6.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_5:
+        return mark_safe('<img src="%sforum/img/authority/vote5.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_4:
+        return mark_safe('<img src="%sforum/img/authority/vote4.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_3:
+        return mark_safe('<img src="%sforum/img/authority/vote3.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_2:
+        return mark_safe('<img src="%sforum/img/authority/vote2.gif" alt="" />' % (settings.STATIC_URL))
+    elif posts >= forum_settings.AUTHORITY_STEP_1:
+        return mark_safe('<img src="%sforum/img/authority/vote1.gif" alt="" />' % (settings.STATIC_URL))
     else:
-        return mark_safe('<img src="%sforum/img/authority/vote0.gif" alt="" />' % (settings.MEDIA_URL))
+        return mark_safe('<img src="%sforum/img/authority/vote0.gif" alt="" />' % (settings.STATIC_URL))
 
-    
+
 @register.filter
 def online(user):
     return cache.get(str(user.id))
@@ -237,15 +237,15 @@ def online(user):
 def attachment_link(attach):
     from django.template.defaultfilters import filesizeformat
     if attach.content_type in ['image/png', 'image/gif', 'image/jpeg']:
-        img = '<img src="%sforum/img/attachment/image.png" alt="attachment" />' % (settings.MEDIA_URL)
+        img = '<img src="%sforum/img/attachment/image.png" alt="attachment" />' % (settings.STATIC_URL)
     elif attach.content_type in ['application/x-tar', 'application/zip']:
-        img = '<img src="%sforum/img/attachment/compress.png" alt="attachment" />' % (settings.MEDIA_URL)
+        img = '<img src="%sforum/img/attachment/compress.png" alt="attachment" />' % (settings.STATIC_URL)
     elif attach.content_type in ['text/plain']:
-        img = '<img src="%sforum/img/attachment/text.png" alt="attachment" />' % (settings.MEDIA_URL)
+        img = '<img src="%sforum/img/attachment/text.png" alt="attachment" />' % (settings.STATIC_URL)
     elif attach.content_type in ['application/msword']:
-        img = '<img src="%sforum/img/attachment/doc.png" alt="attachment" />' % (settings.MEDIA_URL)
+        img = '<img src="%sforum/img/attachment/doc.png" alt="attachment" />' % (settings.STATIC_URL)
     else:
-        img = '<img src="%sforum/img/attachment/unknown.png" alt="attachment" />' % (settings.MEDIA_URL)
+        img = '<img src="%sforum/img/attachment/unknown.png" alt="attachment" />' % (settings.STATIC_URL)
     attachment = '%s <a href="%s">%s</a> (%s)' % (img, attach.get_absolute_url(), attach.name, filesizeformat(attach.size))
     return mark_safe(attachment)
 
@@ -279,7 +279,7 @@ def set_theme_style(user):
         theme_style = '<link rel="stylesheet" type="text/css" href="%(media_url)sforum/themes/default/style.css" />'
 
     return theme_style % dict(
-        media_url=settings.MEDIA_URL,
+        media_url=settings.STATIC_URL,
         theme=selected_theme
     )
 
@@ -294,7 +294,7 @@ def set_markup_editor(user, markup=None):
             <script type="text/javascript" src="%(media_url)sforum/js/markitup/sets/%(markup)s/set.js"></script>
             <script type="text/javascript" src="%(media_url)sforum/js/markup/%(markup)s/board.js"></script>
         ''' % dict(
-            media_url=settings.MEDIA_URL,
+            media_url=settings.STATIC_URL,
             markup=markup if markup else user.forum_profile.markup
         )
     return markup_style

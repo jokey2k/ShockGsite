@@ -98,7 +98,8 @@ MIDDLEWARE_CLASSES = (
     'djangobb_forum.middleware.LastLoginMiddleware',
     'djangobb_forum.middleware.UsersOnline',
 )
-INTERNAL_IPS = ('127.0.0.1','85.176.107.33')
+
+INTERNAL_IPS = ('127.0.0.1')
 ROOT_URLCONF = 'urls'
 
 TEMPLATE_DIRS = (

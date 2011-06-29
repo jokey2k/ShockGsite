@@ -2,6 +2,7 @@ from django.conf.urls.defaults import *
 from django.views.generic.simple import redirect_to
 from django.conf import settings
 from django.contrib import admin
+from django.conf.urls.static import static
 
 from sitemap import SitemapForum, SitemapTopic
 from forms import RegistrationFormUtfUsername
@@ -34,12 +35,12 @@ urlpatterns = patterns('',
     (r'^sitemap.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 
     # Apps
-    (r'^board/account/', include(authopenid_urlpatterns)),
+    (r'^account/', include(authopenid_urlpatterns)),
     (r'^board/', include('djangobb_forum.urls', namespace='djangobb')),
     (r'^polls/', include('polls.urls')),
     (r'', include('gamesquad.urls'))
-)
     (r'^news/', include('news.urls')),
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # PM Extension
 if (forum_settings.PM_SUPPORT):
@@ -49,6 +50,6 @@ if (forum_settings.PM_SUPPORT):
 
 if (settings.DEBUG):
     urlpatterns += patterns('',
-        (r'^%s(?P<path>.*)$' % settings.MEDIA_URL.lstrip('/'),
+        (r'^%s(?P<path>.*)$' % settings.STATIC_URL.lstrip('/'),
             'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
     )

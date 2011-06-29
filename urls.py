@@ -38,9 +38,9 @@ urlpatterns = patterns('',
     (r'^account/', include(authopenid_urlpatterns)),
     (r'^board/', include('djangobb_forum.urls', namespace='djangobb')),
     (r'^polls/', include('polls.urls')),
-    (r'', include('gamesquad.urls'))
     (r'^shoutbox/', include('shoutbox.urls')),
     (r'^news/', include('news.urls')),
+    (r'', include('gamesquad.urls')),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # PM Extension

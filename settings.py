@@ -127,7 +127,9 @@ INSTALLED_APPS = (
     'news',
     'shoutbox',
     'frontpage',
+    'widget_tweaks',
     'ajaxcomments',
+    'memberlist',
 )
 
 try:

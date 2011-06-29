@@ -40,6 +40,9 @@ urlpatterns = patterns('',
     (r'^polls/', include('polls.urls')),
     (r'^shoutbox/', include('shoutbox.urls')),
     (r'^news/', include('news.urls')),
+    (r'^comments/', include('django.contrib.comments.urls')),
+
+    (r'', include('memberlist.urls')),
     (r'', include('gamesquad.urls')),
     (r'', include('frontpage.urls'))
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

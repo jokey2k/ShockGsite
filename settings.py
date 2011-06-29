@@ -97,7 +97,6 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.transaction.TransactionMiddleware',
     'djangobb_forum.middleware.LastLoginMiddleware',
     'djangobb_forum.middleware.UsersOnline',
-    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 INTERNAL_IPS = ('127.0.0.1','85.176.107.33')
 ROOT_URLCONF = 'urls'
@@ -122,9 +121,7 @@ INSTALLED_APPS = (
     'registration',
     'djangobb_forum',
     'haystack',
-    'messages',
     'django_authopenid',
-    #'debug_toolbar',
     'polls',
     'gamesquad',
     'news',
@@ -173,10 +170,7 @@ CACHE_MIDDLEWARE_ANONYMOUS_ONLY = True
 
 DJANGOBB_PM_SUPPORT = False
 
-DEBUG_TOOLBAR_CONFIG = {
-    'INTERCEPT_REDIRECTS': True,
-    'HIDE_DJANGO_SQL': True,
-}
+USE_DEBUGBAR = False
 
 RECAPTCHA_PUBKEY = '6LcywAgAAAAAAK3hpJf983v0BMNJcSBjXzCkOG2V'
 RECAPTCHA_PRIVKEY = '6LcywAgAAAAAAOYI1eTZ8n0SaxRxrEELWW0SkkYD'
@@ -185,3 +179,11 @@ try:
     from local_settings import *
 except ImportError:
     pass
+
+if USE_DEBUGBAR:
+	INSTALLED_APPS += ('debug_toolbar',)
+	MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
+	DEBUG_TOOLBAR_CONFIG = {
+    	'INTERCEPT_REDIRECTS': True,
+    	'HIDE_DJANGO_SQL': False,
+	}

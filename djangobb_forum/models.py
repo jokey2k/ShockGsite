@@ -49,8 +49,8 @@ except ImportError:
     pass
 
 path = os.path.join(settings.MEDIA_ROOT, 'forum', 'themes')
-THEME_CHOICES = [(theme, theme) for theme in os.listdir(path) 
-                 if os.path.isdir(os.path.join(path, theme))]
+THEME_CHOICES = [('default','default')] #[(theme, theme) for theme in os.listdir(path)
+#                 if os.path.isdir(os.path.join(path, theme))]
 
 class Category(models.Model):
     name = models.CharField(_('Name'), max_length=80)
@@ -78,7 +78,7 @@ class Category(models.Model):
 
     def has_access(self, user):
         if self.groups.exists():
-            if user.is_authenticated(): 
+            if user.is_authenticated():
                     if not self.groups.filter(user__pk=user.id).exists():
                         return False
             else:
@@ -204,7 +204,7 @@ class Post(models.Model):
         verbose_name_plural = _('Posts')
 
     def save(self, *args, **kwargs):
-        self.body_html = convert_text_to_html(self.body, self.markup) 
+        self.body_html = convert_text_to_html(self.body, self.markup)
         if forum_settings.SMILES_SUPPORT and self.user.forum_profile.show_smilies:
             self.body_html = smiles(self.body_html)
         super(Post, self).save(*args, **kwargs)
@@ -246,7 +246,7 @@ class Post(models.Model):
 
     def summary(self):
         LIMIT = 50
-        tail = len(self.body) > LIMIT and '...' or '' 
+        tail = len(self.body) > LIMIT and '...' or ''
         return self.body[:LIMIT] + tail
 
     __unicode__ = summary

@@ -120,7 +120,7 @@ def search(request):
     # TODO: move to form
     if 'action' in request.GET:
         action = request.GET['action']
-        #FIXME: show_user for anonymous raise exception, 
+        #FIXME: show_user for anonymous raise exception,
         #django bug http://code.djangoproject.com/changeset/14087 :|
         groups = request.user.groups.all() or [] #removed after django > 1.2.3 release
         topics = Topic.objects.filter(
@@ -389,7 +389,7 @@ def user(request, username):
     if request.user.is_authenticated() and user == request.user or request.user.is_superuser:
         if 'section' in request.GET:
             section = request.GET['section']
-            profile_url = reverse('djangobb:forum_profile', args=[user.username]) + '?section=' + section  
+            profile_url = reverse('djangobb:forum_profile', args=[user.username]) + '?section=' + section
             if section == 'privacy':
                 form = build_form(PrivacyProfileForm, request, instance=user.forum_profile)
                 if request.method == 'POST' and form.is_valid():

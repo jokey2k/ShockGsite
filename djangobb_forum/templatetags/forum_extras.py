@@ -104,19 +104,19 @@ def pagination(context, adjacent_pages=1):
 def lofi_pagination(context):
     page_list = range(1, context['pages'] + 1)
     paginator = context['paginator']
-    
+
     get_params = '&'.join(['%s=%s' % (x[0],','.join(x[1])) for x in
         context['request'].GET.iteritems() if (not x[0] == 'page' and not x[0] == 'per_page')])
     if get_params:
         get_params = '?%s&' % get_params
     else:
         get_params = '?'
-        
+
     return {
             'get_params': get_params,
             'page_list': page_list,
             'paginator': paginator,
-            } 
+            }
 
 
 @register.simple_tag
@@ -136,7 +136,7 @@ def lofi_link(object, anchor=u''):
     Return A tag with lofi_link to object.
     """
 
-    url = hasattr(object,'get_absolute_url') and object.get_absolute_url() or None   
+    url = hasattr(object,'get_absolute_url') and object.get_absolute_url() or None
     anchor = anchor or smart_unicode(object)
     return mark_safe('<a href="%slofi">%s</a>' % (url, escape(anchor)))
 
@@ -277,13 +277,13 @@ def gravatar(email):
 @register.simple_tag
 def set_theme_style(user):
     theme_style = ''
-    selected_theme = '' 
+    selected_theme = ''
     if user.is_authenticated():
         selected_theme = user.forum_profile.theme
-        theme_style = '<link rel="stylesheet" type="text/css" href="%(media_url)sforum/themes/%(theme)s/style.css" />' 
+        theme_style = '<link rel="stylesheet" type="text/css" href="%(media_url)sforum/themes/%(theme)s/style.css" />'
     else:
         theme_style = '<link rel="stylesheet" type="text/css" href="%(media_url)sforum/themes/default/style.css" />'
-        
+
     return theme_style % dict(
         media_url=settings.MEDIA_URL,
         theme=selected_theme
@@ -291,7 +291,7 @@ def set_theme_style(user):
 
 @register.simple_tag
 def set_markup_editor(user, markup=None):
-    markup_style = '' 
+    markup_style = ''
     if user.is_authenticated():
         markup_style = '''
             <link rel="stylesheet" type="text/css" href="%(media_url)sforum/js/markitup/skins/markitup/style.css" />

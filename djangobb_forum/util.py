@@ -43,14 +43,14 @@ def render_to(template):
 
     @render_to('template.html')
     def foo(request):
-        bar = Bar.object.all()  
+        bar = Bar.object.all()
         return {'bar': bar}
 
-    # equals to 
+    # equals to
     def foo(request):
-        bar = Bar.object.all()  
-        return render_to_response('template.html', 
-                                  {'bar': bar}, 
+        bar = Bar.object.all()
+        return render_to_response('template.html',
+                                  {'bar': bar},
                                   context_instance=RequestContext(request))
 
     # 2. Template name as TEMPLATE item value in return dictionary
@@ -59,12 +59,12 @@ def render_to(template):
     def foo(request, category):
         template_name = '%s.html' % category
         return {'bar': bar, 'TEMPLATE': template_name}
-    
+
     #equals to
     def foo(request, category):
         template_name = '%s.html' % category
-        return render_to_response(template_name, 
-                                  {'bar': bar}, 
+        return render_to_response(template_name,
+                                  {'bar': bar},
                                   context_instance=RequestContext(request))
     """
 
@@ -208,7 +208,7 @@ class ExcludeTagsHTMLParser(HTMLParser):
             self.html.append(data)
 
         def handle_startendtag(self, tag, attrs):
-            self.html.append('<%s%s/>' % (tag, self.__html_attrs(attrs))) 
+            self.html.append('<%s%s/>' % (tag, self.__html_attrs(attrs)))
 
         def handle_endtag(self, tag):
             self.is_ignored = False
@@ -238,7 +238,7 @@ class ExcludeTagsHTMLParser(HTMLParser):
 def urlize(data):
     """
     Urlize plain text links in the HTML contents.
-   
+
     Do not urlize content of A and CODE tags.
     """
 
@@ -276,7 +276,7 @@ def paginate(items, request, per_page, total_count=None):
         paged_list_name = paginator.page(page_number).object_list
     except (InvalidPage, EmptyPage):
         raise Http404
-    return pages, paginator, paged_list_name 
+    return pages, paginator, paged_list_name
 
 def set_language(request, language):
     """

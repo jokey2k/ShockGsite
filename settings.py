@@ -134,6 +134,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'django.contrib.staticfiles',
+    'django.contrib.comments',
     'registration',
     'djangobb_forum',
     'haystack',
@@ -143,6 +144,7 @@ INSTALLED_APPS = (
     'polls',
     'gamesquad',
     'news'
+    'ajaxcomments',
 )
 
 try:

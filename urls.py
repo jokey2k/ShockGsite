@@ -39,6 +39,7 @@ urlpatterns = patterns('',
     (r'^polls/', include('polls.urls')),
     (r'', include('gamesquad.urls'))
 )
+    (r'^news/', include('news.urls')),
 
 # PM Extension
 if (forum_settings.PM_SUPPORT):

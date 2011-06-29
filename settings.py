@@ -138,7 +138,7 @@ INSTALLED_APPS = (
     #'debug_toolbar',
     'polls',
     'gamesquad',
-    'news'
+    'news',
     'ajaxcomments',
 )
 

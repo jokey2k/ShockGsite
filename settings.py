@@ -185,6 +185,7 @@ DJANGOBB_LOFI_SUPPORT = False
 
 USE_DEBUGBAR = False
 
+SIMPLE_REGEX = r'shock(g|G)'
 
 try:
     from local_settings import *

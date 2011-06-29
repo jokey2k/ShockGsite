@@ -41,6 +41,7 @@ urlpatterns = patterns('',
     (r'^shoutbox/', include('shoutbox.urls')),
     (r'^news/', include('news.urls')),
     (r'', include('gamesquad.urls')),
+    (r'', include('frontpage.urls'))
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # PM Extension

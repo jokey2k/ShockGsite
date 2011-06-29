@@ -125,6 +125,8 @@ INSTALLED_APPS = (
     'polls',
     'gamesquad',
     'news',
+    'shoutbox',
+    'frontpage',
     'ajaxcomments',
 )
 

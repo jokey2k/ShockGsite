@@ -47,6 +47,7 @@ def postform(request):
         form.fields['next'].initial=request.get_full_path()
         if request.user.is_authenticated():
             form.fields['nickname'].initial = request.user.username
+            form.fields['nickname'].widget.attrs['readonly'] = True
             del form.fields['hint']
                         
     return render(request, 'shoutbox/postform.html',

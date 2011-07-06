@@ -17,6 +17,10 @@ def recent_entries(request, entrycount=5):
 def postform(request):
     if request.method == 'POST':
         form = ShoutboxPostForm(request.POST)
+
+        if request.user.is_authenticated():
+            del form.fields['hint']
+
         if form.is_valid():
             entry = ShoutboxEntry()
             entry.text = form.cleaned_data['message']
@@ -31,6 +35,8 @@ def postform(request):
             if request.is_ajax():
                 # For ajax store, send a blank, new form afterwards
                 form = ShoutboxPostForm()
+                if request.user.is_authenticated():
+                    del form.fields['hint']
             else:
                 next = request.POST['next'] or request.META['HTTP_REFERER']
                 if next and next == "/shoutbox/post":
@@ -42,6 +48,7 @@ def postform(request):
         form.fields['next'].initial=request.get_full_path()
         if request.user.is_authenticated():
             form.fields['nickname'].initial = request.user.username
+            del form.fields['hint']
                         
     return render(request, 'shoutbox/postform.html',
                            {'form':form})

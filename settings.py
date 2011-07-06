@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'widget_tweaks',
     'ajaxcomments',
     'memberlist',
+    'gameserver',
 )
 
 try:

@@ -41,7 +41,6 @@ def postform(request):
                 next = request.POST['next'] or request.META['HTTP_REFERER']
                 if next and next == "/shoutbox/post":
                     next = "/"
-                import pdb;pdb.set_trace()
                 return redirect(next if next else '/')
     else:
         form = ShoutboxPostForm()

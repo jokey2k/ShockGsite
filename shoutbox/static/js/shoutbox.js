@@ -21,6 +21,7 @@ function attachShoutboxHandler() {
             $("div#shoutboxpost").replaceWith(content);
             refreshShoutBox();
             attachShoutboxHandler();
+            scroll(0, $("div#shoutbox").offset().top);
         }
       );
     });

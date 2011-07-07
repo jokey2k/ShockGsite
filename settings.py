@@ -132,6 +132,7 @@ INSTALLED_APPS = (
     'ajaxcomments',
     'memberlist',
     'gameserver',
+    'trackmaniawars'
 )
 
 try:

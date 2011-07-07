@@ -32,9 +32,9 @@ WARSTATUS_CHOICES = [
 ]
 
 TMXNATION_CHOICES = [
-    ('TMN', _('Nations')),
-    ('TMNF', _('Nations Forever')),
-    ('TMUF', _('United'))
+    ('nations', _('Nations')),
+    ('tmnforever', _('Nations Forever')),
+    ('united', _('United'))
 ]
 
 class War(models.Model):

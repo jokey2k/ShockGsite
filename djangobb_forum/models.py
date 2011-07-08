@@ -137,17 +137,21 @@ class Topic(models.Model):
         return self.name
 
     def delete(self, *args, **kwargs):
-            last_post = self.posts.latest()
+        try: 
+            last_post = self.posts.latest() 
+        except Post.DoesNotExist: 
+            pass 
+        else: 
             last_post.last_forum_post.clear()
-            forum = self.forum
-            super(Topic, self).delete(*args, **kwargs)
-            try:
-                forum.last_post = Topic.objects.filter(forum__id=forum.id).latest().last_post
-            except Topic.DoesNotExist:
-                forum.last_post = None
-            forum.topic_count = Topic.objects.filter(forum__id=forum.id).count()
-            forum.post_count = Post.objects.filter(topic__forum__id=forum.id).count()
-            forum.save()
+        forum = self.forum
+        super(Topic, self).delete(*args, **kwargs)
+        try:
+            forum.last_post = Topic.objects.filter(forum__id=forum.id).latest().last_post
+        except Topic.DoesNotExist:
+            forum.last_post = None
+        forum.topic_count = Topic.objects.filter(forum__id=forum.id).count()
+        forum.post_count = Post.objects.filter(topic__forum__id=forum.id).count()
+        forum.save()
 
     @property
     def head(self):

@@ -3,8 +3,6 @@ from django.template import RequestContext, Context, loader
 from django.shortcuts import redirect, render
 from django.db import transaction
 
-from djangobb_forum.util import render_to
-
 from shoutbox.models import ShoutboxEntry
 from shoutbox.forms import ShoutboxPostForm
 

@@ -46,7 +46,7 @@ class War(models.Model):
     homepage = models.URLField(_('Homepage'), blank=True, null=True, verify_exists=True)
     contact = models.CharField(_('Contact'), max_length=200)
     datetime = models.DateTimeField(_('Date'), default=datetime.datetime.now)
-    mode = models.CharField(_('Warmode'), max_length=100, choices=WARMODE_CHOICES)
+    mode = models.CharField(_('War Mode'), max_length=100, choices=WARMODE_CHOICES)
     server = models.CharField(_('Server'), blank=True, null=True, max_length=100)
     orgamember = models.ForeignKey(User)
     mapsperteam = models.IntegerField(_('Maps per team'))
@@ -60,7 +60,7 @@ class War(models.Model):
         verbose_name = "War"
 
     def __unicode__(self):
-        return u"War against %s" % opponent
+        return u"War against %s" % self.opponent
 
     def warstatus(self):
         """loss, win or even, untranslated by intentio so it can be used for pictures"""
@@ -100,7 +100,7 @@ class WarMap(models.Model):
         search_fields = ('name', 'author')
 
     def __unicode__(self):
-        return u"WarMap %s"
+        return u"WarMap %s" % self.name
 
     def map_uploaded(self):
         return self.mapfile != ''

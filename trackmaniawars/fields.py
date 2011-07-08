@@ -24,7 +24,7 @@ class FramedImageField(models.ImageField):
         super(FramedImageField, self).__init__(*args, **kwargs)
 
     def save_form_data(self, instance, data):
-        if data and self.width and self.height:
+        if data and self.width and self.height and not isinstance(data, unicode):
             content = self.resize_image(data.read(), width=self.width, height=self.height)
             salt = sha_constructor(str(random.random())).hexdigest()[:5]
             fname =  sha_constructor(salt + settings.SECRET_KEY).hexdigest() + '.png'

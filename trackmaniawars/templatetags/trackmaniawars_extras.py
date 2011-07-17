@@ -1,5 +1,6 @@
 from django import template
 from django.shortcuts import redirect, render
+from django.core.exceptions import ImproperlyConfigured
 
 from trackmaniawars.models import War
 

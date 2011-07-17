@@ -77,6 +77,12 @@ class War(models.Model):
         else:
             return u"equal"
 
+    def points(self):
+        if self.status == 4:
+            return u"%i : %i" % (self.our_points, self.opponent_points)
+        else:
+            return u"-- : --"
+
 
 class WarMap(models.Model):
     """A map for a war"""

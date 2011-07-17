@@ -1,12 +1,13 @@
-from shoutbox.views import recent_entries as shoutbox_recent_entries, postform as shoutbox_postform
-from news.views import recent_entries as news_recent_entries
+from django.db.models import Q
+from django.utils.safestring import mark_safe
 
 from djangobb_forum.util import render_to
-from django.utils.safestring import mark_safe
 
 from djangobb_forum.models import Topic, PostTracking
 from djangobb_forum.templatetags import forum_extras
+from news.views import recent_entries as news_recent_entries
 from trackmaniawars.models import FightUs
+    
 @render_to("frontpage/frontpage.html")
 def frontpage(request):
     """Render the front page"""
@@ -15,6 +16,7 @@ def frontpage(request):
     news_older = mark_safe(news_recent_entries(request, 3, "news/recents_older.html", 1).content)
 
     return locals()
+
 @render_to("frontpage/statusbox.html")
 def statusbox(request):
     """Render the current status box"""

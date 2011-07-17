@@ -160,6 +160,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django_authopenid.context_processors.authopenid',
     'djangobb_forum.context_processors.forum_settings',
+    'frontpage.context_processors.frontpage_loginform',
 )
 
 # Haystack settings

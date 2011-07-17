@@ -42,7 +42,7 @@ urlpatterns = patterns('',
     (r'^news/', include('news.urls')),
     (r'^comments/', include('django.contrib.comments.urls')),
     (r'^servers/', include('gameserver.urls')),
-    (r'^wars/', include('trackmaniawars.urls')),
+    (r'^wars/', include('trackmaniawars.urls', namespace='trackmaniawars')),
 
     (r'', include('memberlist.urls')),
     (r'', include('gamesquad.urls')),

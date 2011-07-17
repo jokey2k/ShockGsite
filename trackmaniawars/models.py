@@ -66,16 +66,16 @@ class War(models.Model):
         """loss, win or even, untranslated by intentio so it can be used for pictures"""
 
         if self.status == 3:
-            return "running" 
+            return u"running" 
         elif self.status != 4:
-            return ""
+            return u""
 
         if self.our_points < self.opponent_points:
-            return "loss"
+            return u"loss"
         elif self.our_points > self.opponent_points:
-            return "win"
+            return u"win"
         else:
-            return "equal"
+            return u"equal"
 
 
 class WarMap(models.Model):

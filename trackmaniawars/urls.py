@@ -7,7 +7,7 @@ from trackmaniawars import views as war_views
 urlpatterns = patterns('',
     (r'^$',
         ListView.as_view(
-            queryset=War.objects.order_by('-datetime'),
+            queryset=War.objects.filter(status__gt=1).order_by('-datetime'),
             context_object_name='wars',
             paginate_by=20,
             template_name='trackmaniawars/list.html')),

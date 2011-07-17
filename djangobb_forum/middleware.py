@@ -11,6 +11,7 @@ class LastLoginMiddleware(object):
         if request.user.is_authenticated():
             cache.set(str(request.user.id), True, forum_settings.USER_ONLINE_TIMEOUT)
 
+
 class ForumMiddleware(object):
     def process_request(self, request):
         if request.user.is_authenticated():
@@ -25,6 +26,7 @@ class ForumMiddleware(object):
                 request.session['django_language'] = profile.language
                 translation.activate(profile.language)
                 request.LANGUAGE_CODE = translation.get_language()
+
 
 class UsersOnline(object):
     def process_request(self, request):

@@ -40,3 +40,7 @@ def statusbox(request):
     
     fightuscount = FightUs.objects.count()
     return {'unread_topics':topiccount, 'is_clanmember': clanmemberstatus, 'fightus_count': fightuscount}
+
+@render_to("frontpage/impressum.html")
+def impressum(request):
+    return {}

@@ -6,7 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 
 from news import settings as news_settings
-from news.fields import FramedImageField
+from specialfields import FramedImageField
 
 class NewsItem(models.Model):
     """One Newsitem"""

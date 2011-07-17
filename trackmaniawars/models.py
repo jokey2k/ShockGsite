@@ -7,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 from gamesquad.models import Squad
 
 from trackmaniawars import settings as trackmaniawars_settings
-from trackmaniawars.fields import FramedImageField
+from specialfields import FramedImageField
 
 choices = [
     _('Team Rounds 2on2'),

@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 from gameserver import settings as gameserver_settings
-from gameserver.fields import FramedImageField
+from specialfields import FramedImageField
 
 class Server(models.Model):
     """A basic game server"""

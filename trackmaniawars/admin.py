@@ -17,7 +17,10 @@ class WarAdmin(admin.ModelAdmin):
         return model.get_mode_display()
     named_mode.short_description = _("War Mode")
 
+class FightUsAdmin(admin.ModelAdmin):
+    list_display = ('opponent', 'datetime')
+    search_fields = ('opponent', 'opponenttag', 'homepage', 'contact', 'server')
 
 admin.site.register(War, WarAdmin)
 admin.site.register(WarMap)
-admin.site.register(FightUs)
+admin.site.register(FightUs, FightUsAdmin)

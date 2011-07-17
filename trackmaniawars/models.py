@@ -132,9 +132,5 @@ class FightUs(models.Model):
         verbose_name = "Fight Us"
         verbose_name_plural = "Fight Us"
 
-    class Admin:
-        list_display = ('opponent', 'datetime')
-        search_fields = ('opponent', 'opponenttag', 'homepage', 'contact', 'server')
-
     def __unicode__(self):
         return u"FightUs against %s" % self.opponent

@@ -1,5 +1,3 @@
-from django.http import HttpResponse
-from django.template import RequestContext, Context, loader
 from django.shortcuts import redirect, render
 from django.db import transaction
 

@@ -7,8 +7,8 @@ from trackmaniawars import views as war_views
 urlpatterns = patterns('',
     (r'^$',
         ListView.as_view(
-            model=War,
-            context_object_name='warlist',
+            queryset=War.objects.order_by('-datetime'),
+            context_object_name='wars',
             paginate_by=20,
             template_name='trackmaniawars/list.html')),
     (r'^(?P<pk>\d+)$',

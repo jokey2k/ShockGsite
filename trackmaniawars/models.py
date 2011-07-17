@@ -137,4 +137,4 @@ class FightUs(models.Model):
         search_fields = ('opponent', 'opponenttag', 'homepage', 'contact', 'server')
 
     def __unicode__(self):
-        return u"FightUs against %s" % opponent
+        return u"FightUs against %s" % self.opponent

@@ -1,0 +1,1938 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DjangoBB\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-07-18 01:51+0200\n"
+"PO-Revision-Date: 2011-03-22 15:09+0000\n"
+"Last-Translator: dbanck <daniel@dbanck.de>\n"
+"Language-Team: German <None>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: djangobb_forum/feeds.py:26 djangobb_forum/feeds.py:27
+#: djangobb_forum/templates/forum/base.html:14
+#: themes/shockg/templates/forum/base.html:14
+#: themes/shockg/templates/forum/base_new.html:14
+msgid "Latest posts on forum"
+msgstr "Neueste Beiträge"
+
+#: djangobb_forum/feeds.py:45 djangobb_forum/feeds.py:46
+#: djangobb_forum/templates/forum/base.html:15
+#: themes/shockg/templates/forum/base.html:15
+#: themes/shockg/templates/forum/base_new.html:15
+msgid "Latest topics on forum"
+msgstr "Aktuelle Themen"
+
+#: djangobb_forum/feeds.py:74 djangobb_forum/feeds.py:82
+#, python-format
+msgid "Latest posts on %s topic"
+msgstr "Letzte Beiträge zum Thema %s"
+
+#: djangobb_forum/feeds.py:99 djangobb_forum/feeds.py:107
+#, python-format
+msgid "Latest posts on %s forum"
+msgstr "Letzte Beiträge im Forum %s"
+
+#: djangobb_forum/feeds.py:124 djangobb_forum/feeds.py:127
+#, python-format
+msgid "Latest posts on %s category"
+msgstr "Letzte Beiträge in Kategorie %s"
+
+#: djangobb_forum/forms.py:22 djangobb_forum/forms.py:160
+#: djangobb_forum/forms.py:270 djangobb_forum/templates/forum/users.html:45
+#: templates/authopenid/complete.html:29 templates/authopenid/complete.html:44
+msgid "Username"
+msgstr "Benutzername"
+
+#: djangobb_forum/forms.py:23 djangobb_forum/templates/forum/users.html:48
+msgid "Registered"
+msgstr "Registriert"
+
+#: djangobb_forum/forms.py:24
+msgid "No. of posts"
+msgstr "Anzahl der Beiträge"
+
+#: djangobb_forum/forms.py:28
+msgid "Post time"
+msgstr "Erstellungsdatum"
+
+#: djangobb_forum/forms.py:29 trackmaniawars/models.py:92
+msgid "Author"
+msgstr "Autor"
+
+#: djangobb_forum/forms.py:30 djangobb_forum/forms.py:52
+#: djangobb_forum/forms.py:134 djangobb_forum/forms.py:357
+#: djangobb_forum/models.py:119
+#: djangobb_forum/templates/forum/add_post.html:27
+#: djangobb_forum/templates/forum/edit_post.html:24
+#: templates/messages/inbox.html:12 templates/messages/outbox.html:12
+msgid "Subject"
+msgstr "Betreff"
+
+#: djangobb_forum/forms.py:31 djangobb_forum/forms.py:305
+#: djangobb_forum/models.py:102 djangobb_forum/models.py:118
+#: djangobb_forum/templates/forum/index.html:53
+#: djangobb_forum/templates/forum/search_topics.html:22
+msgid "Forum"
+msgstr "Forum"
+
+#: djangobb_forum/forms.py:35
+msgid "Ascending"
+msgstr "Aufsteigend"
+
+#: djangobb_forum/forms.py:36
+msgid "Descending"
+msgstr "Absteigend"
+
+#: djangobb_forum/forms.py:40 djangobb_forum/models.py:134
+#: djangobb_forum/templates/forum/index.html:54
+msgid "Topics"
+msgstr "Themen"
+
+#: djangobb_forum/forms.py:41 djangobb_forum/models.py:208
+#: djangobb_forum/templates/forum/index.html:55
+#: djangobb_forum/templates/forum/users.html:47
+msgid "Posts"
+msgstr "Beiträge"
+
+#: djangobb_forum/forms.py:45
+msgid "Message text and topic subject"
+msgstr "Text und Überschrift"
+
+#: djangobb_forum/forms.py:46
+msgid "Message text only"
+msgstr "Nur Text"
+
+#: djangobb_forum/forms.py:47
+msgid "Topic subject only"
+msgstr "Nur Überschrift"
+
+#: djangobb_forum/forms.py:54 djangobb_forum/templates/forum/add_post.html:36
+#: djangobb_forum/templates/forum/topic.html:169
+msgid "Attachment"
+msgstr "Anhang"
+
+#: djangobb_forum/forms.py:81
+msgid "Can't be empty nor contain only whitespace characters"
+msgstr "Darf nicht leer sein oder nur Leerzeichen enthalten"
+
+#: djangobb_forum/forms.py:99
+msgid "Attachment is too big"
+msgstr "Anhang ist zu groß"
+
+#: djangobb_forum/forms.py:161 djangobb_forum/templates/forum/topic.html:71
+#: templates/messages/view.html:38
+msgid "E-mail"
+msgstr "E-Mail"
+
+#: djangobb_forum/forms.py:191
+msgid "Real name"
+msgstr "Voller Name"
+
+#: djangobb_forum/forms.py:272 djangobb_forum/forms.py:307
+msgid "Sort by"
+msgstr "Sortiert nach"
+
+#: djangobb_forum/forms.py:273 djangobb_forum/forms.py:308
+msgid "Sort order"
+msgstr "Sortierung"
+
+#: djangobb_forum/forms.py:301
+msgid "Keyword search"
+msgstr "Stichwort-Suche"
+
+#: djangobb_forum/forms.py:303
+msgid "Author search"
+msgstr "Autor-Suche"
+
+#: djangobb_forum/forms.py:306
+msgid "Search in"
+msgstr "Suche in"
+
+#: djangobb_forum/forms.py:309
+msgid "Show results as"
+msgstr "Zeige Ergebnisse als"
+
+#: djangobb_forum/forms.py:334
+#, python-format
+msgid "User with login %s does not exist"
+msgstr "User mit Login %s existiert nicht"
+
+#: djangobb_forum/forms.py:344
+msgid "You already voted for this post"
+msgstr "Sie haben zu diesem Beitrag bereits abgestimmt."
+
+#: djangobb_forum/forms.py:359 djangobb_forum/models.py:199
+#: djangobb_forum/templates/forum/add_post.html:29
+#: djangobb_forum/templates/forum/edit_post.html:27
+#: templates/authopenid/failure.html:7
+#: templates/registration/registration_complete.html:7
+msgid "Message"
+msgstr "Nachricht"
+
+#: djangobb_forum/models.py:39
+msgid "Display your e-mail address."
+msgstr "Mailadresse anzeigen"
+
+#: djangobb_forum/models.py:40
+msgid "Hide your e-mail address but allow form e-mail."
+msgstr "Mailadresse nicht anzeigen, aber Formular Email zulassen."
+
+#: djangobb_forum/models.py:41
+msgid "Hide your e-mail address and disallow form e-mail."
+msgstr "Mailadresse nicht anzeigen und keine Email zulassen"
+
+#: djangobb_forum/models.py:56 djangobb_forum/models.py:91
+#: djangobb_forum/models.py:380 gamesquad/models.py:10 gamesquad/models.py:24
+#: gamesquad/models.py:40
+msgid "Name"
+msgstr "Name"
+
+#: djangobb_forum/models.py:57
+msgid "Groups"
+msgstr "Gruppen"
+
+#: djangobb_forum/models.py:57
+msgid "Only users from these groups can see this category"
+msgstr "Nur Benutzer aus diesen Gruppen können diese Kategorie sehen"
+
+#: djangobb_forum/models.py:58 djangobb_forum/models.py:92
+#: gamesquad/models.py:25
+msgid "Position"
+msgstr "Position"
+
+#: djangobb_forum/models.py:62 djangobb_forum/models.py:90
+msgid "Category"
+msgstr "Kategorie"
+
+#: djangobb_forum/models.py:63
+msgid "Categories"
+msgstr "Kategorien"
+
+#: djangobb_forum/models.py:93
+msgid "Description"
+msgstr "Beschreibung"
+
+#: djangobb_forum/models.py:94
+msgid "Moderators"
+msgstr "Moderatoren"
+
+#: djangobb_forum/models.py:95 djangobb_forum/models.py:121
+#: djangobb_forum/models.py:196
+msgid "Updated"
+msgstr "Aktualisiert"
+
+#: djangobb_forum/models.py:96 djangobb_forum/models.py:127
+#: djangobb_forum/models.py:297
+msgid "Post count"
+msgstr "Beiträge"
+
+#: djangobb_forum/models.py:97
+msgid "Topic count"
+msgstr "Themen"
+
+#: djangobb_forum/models.py:103
+msgid "Forums"
+msgstr "Foren"
+
+#: djangobb_forum/models.py:120 djangobb_forum/models.py:195
+#: djangobb_forum/models.py:341
+msgid "Created"
+msgstr "Erstellt"
+
+#: djangobb_forum/models.py:122 djangobb_forum/models.py:194
+#: djangobb_forum/models.py:277
+msgid "User"
+msgstr "Benutzer"
+
+#: djangobb_forum/models.py:123
+msgid "Views count"
+msgstr "Aufrufe"
+
+#: djangobb_forum/models.py:124
+msgid "Sticky"
+msgstr "Wichtig"
+
+#: djangobb_forum/models.py:125
+msgid "Closed"
+msgstr "Geschlossen"
+
+#: djangobb_forum/models.py:126
+msgid "Subscribers"
+msgstr "Abonnenten"
+
+#: djangobb_forum/models.py:133 djangobb_forum/models.py:193
+#: djangobb_forum/templates/forum/forum.html:27
+#: djangobb_forum/templates/forum/moderate.html:23
+#: djangobb_forum/templates/forum/search_topics.html:21
+msgid "Topic"
+msgstr "Thema"
+
+#: djangobb_forum/models.py:197
+msgid "Updated by"
+msgstr "Aktualisiert von"
+
+#: djangobb_forum/models.py:198
+#: djangobb_forum/templates/forum/profile/profile_display.html:25
+msgid "Markup"
+msgstr "Markup"
+
+#: djangobb_forum/models.py:200
+msgid "HTML version"
+msgstr "HTML-Version"
+
+#: djangobb_forum/models.py:201
+msgid "User IP"
+msgstr "Benutzer IP"
+
+#: djangobb_forum/models.py:207 djangobb_forum/models.py:262
+#: djangobb_forum/models.py:338 djangobb_forum/models.py:376
+msgid "Post"
+msgstr "Veröffentlichen"
+
+#: djangobb_forum/models.py:260
+msgid "From"
+msgstr "Absender"
+
+#: djangobb_forum/models.py:261
+msgid "To"
+msgstr "Empfänger"
+
+#: djangobb_forum/models.py:263
+msgid "Time"
+msgstr "Uhrzeit"
+
+#: djangobb_forum/models.py:264
+msgid "Sign"
+msgstr "Signatur"
+
+#: djangobb_forum/models.py:265 djangobb_forum/models.py:342
+#: djangobb_forum/models.py:355 djangobb_forum/templates/forum/report.html:16
+#: djangobb_forum/templates/forum/reputation.html:24
+msgid "Reason"
+msgstr "Grund"
+
+#: djangobb_forum/models.py:268 djangobb_forum/templates/forum/topic.html:61
+msgid "Reputation"
+msgstr "Karma"
+
+#: djangobb_forum/models.py:269
+msgid "Reputations"
+msgstr "Karma"
+
+#: djangobb_forum/models.py:278 trackmaniawars/models.py:57
+msgid "Status"
+msgstr "Status"
+
+#: djangobb_forum/models.py:279
+msgid "Site"
+msgstr "Homepage"
+
+#: djangobb_forum/models.py:280
+msgid "Jabber"
+msgstr "Jabber"
+
+#: djangobb_forum/models.py:281
+msgid "ICQ"
+msgstr "ICQ"
+
+#: djangobb_forum/models.py:282
+msgid "MSN"
+msgstr "MSN"
+
+#: djangobb_forum/models.py:283
+msgid "AIM"
+msgstr "AIM"
+
+#: djangobb_forum/models.py:284
+msgid "Yahoo"
+msgstr "Yahoo"
+
+#: djangobb_forum/models.py:285
+msgid "Xfire"
+msgstr "Xfire"
+
+#: djangobb_forum/models.py:286 djangobb_forum/templates/forum/user.html:25
+msgid "Location"
+msgstr "Ort"
+
+#: djangobb_forum/models.py:287
+msgid "Signature"
+msgstr "Signatur"
+
+#: djangobb_forum/models.py:288
+msgid "Time zone"
+msgstr "Zeitzone"
+
+#: djangobb_forum/models.py:289
+msgid "Language"
+msgstr "Sprache"
+
+#: djangobb_forum/models.py:290
+msgid "Avatar"
+msgstr "Avatar"
+
+#: djangobb_forum/models.py:291
+msgid "Theme"
+msgstr "Theme"
+
+#: djangobb_forum/models.py:292
+msgid "Show avatar"
+msgstr "Avatar anzeigen"
+
+#: djangobb_forum/models.py:293
+msgid "Show signatures"
+msgstr "Signaturen anzeigen"
+
+#: djangobb_forum/models.py:294
+#: djangobb_forum/templates/forum/profile/profile_display.html:40
+msgid "Show smilies"
+msgstr "Smileys anzeigen"
+
+#: djangobb_forum/models.py:295
+msgid "Privacy permission"
+msgstr "Privatsphäre Einstellungen"
+
+#: djangobb_forum/models.py:296
+msgid "Default markup"
+msgstr "Standard Markup"
+
+#: djangobb_forum/models.py:298
+msgid "Birthday"
+msgstr "Geburtstag"
+
+#: djangobb_forum/models.py:301 djangobb_forum/templates/forum/header.html:21
+#: djangobb_forum/templates/forum/topic.html:69
+#: djangobb_forum/templates/forum/user.html:7 templates/messages/view.html:36
+#: themes/shockg/templates/forum/header.html:22
+msgid "Profile"
+msgstr "Profil"
+
+#: djangobb_forum/models.py:302
+msgid "Profiles"
+msgstr "Profile"
+
+#: djangobb_forum/models.py:329 djangobb_forum/models.py:330
+msgid "Post tracking"
+msgstr "Beitragsverfolgung"
+
+#: djangobb_forum/models.py:337
+msgid "Reported by"
+msgstr "Gemeldet durch"
+
+#: djangobb_forum/models.py:339
+msgid "Zapped"
+msgstr "Zapped"
+
+#: djangobb_forum/models.py:340
+msgid "Zapped by"
+msgstr "Zapped durch"
+
+#: djangobb_forum/models.py:345 djangobb_forum/templates/forum/topic.html:116
+msgid "Report"
+msgstr "Melden"
+
+#: djangobb_forum/models.py:346
+msgid "Reports"
+msgstr "Meldungen"
+
+#: djangobb_forum/models.py:352
+msgid "Banned user"
+msgstr "Benutzer gesperrt"
+
+#: djangobb_forum/models.py:353
+msgid "Ban start"
+msgstr "Sperrzeit Beginn"
+
+#: djangobb_forum/models.py:354
+msgid "Ban end"
+msgstr "Sperrzeit Ende"
+
+#: djangobb_forum/models.py:358
+msgid "Ban"
+msgstr "Sperrung"
+
+#: djangobb_forum/models.py:359
+msgid "Bans"
+msgstr "Sperrungen"
+
+#: djangobb_forum/models.py:377
+msgid "Size"
+msgstr "Größe"
+
+#: djangobb_forum/models.py:378
+msgid "Content type"
+msgstr "Inhaltstyp"
+
+#: djangobb_forum/models.py:379
+msgid "Path"
+msgstr "Pfad"
+
+#: djangobb_forum/models.py:381
+msgid "Hash"
+msgstr "Hash"
+
+#: djangobb_forum/templates/forum/add_post.html:9
+#: djangobb_forum/templates/forum/add_post.html:11
+#: djangobb_forum/templates/forum/delete_posts.html:9
+#: djangobb_forum/templates/forum/edit_post.html:8
+#: djangobb_forum/templates/forum/forum.html:13
+#: djangobb_forum/templates/forum/forum.html:71
+#: djangobb_forum/templates/forum/moderate.html:9
+#: djangobb_forum/templates/forum/topic.html:15
+#: djangobb_forum/templates/forum/topic.html:139
+#: djangobb_forum/templates/forum/lofi/forum.html:8
+#: djangobb_forum/templates/forum/lofi/index.html:6
+#: djangobb_forum/templates/forum/lofi/index.html:8
+#: djangobb_forum/templates/forum/lofi/topic.html:8
+msgid "Root"
+msgstr "Root"
+
+#: djangobb_forum/templates/forum/add_post.html:18
+#: djangobb_forum/templates/forum/forum.html:11
+#: djangobb_forum/templates/forum/forum.html:69
+msgid "New topic"
+msgstr "Neues Thema"
+
+#: djangobb_forum/templates/forum/add_post.html:18
+msgid "New reply"
+msgstr "Neue Antwort"
+
+#: djangobb_forum/templates/forum/add_post.html:24
+#: djangobb_forum/templates/forum/topic.html:160
+#: templates/messages/compose.html:17
+msgid "Write your message and submit"
+msgstr "Nachricht schreiben und senden"
+
+#: djangobb_forum/templates/forum/add_post.html:47
+#: djangobb_forum/templates/forum/mail_to.html:25
+#: djangobb_forum/templates/forum/report.html:22
+#: djangobb_forum/templates/forum/reputation_form.html:41
+#: djangobb_forum/templates/forum/search_form.html:70
+#: djangobb_forum/templates/forum/topic.html:178
+#: djangobb_forum/templates/forum/profile/profile_display.html:45
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:81
+#: djangobb_forum/templates/forum/profile/profile_messaging.html:32
+#: djangobb_forum/templates/forum/profile/profile_personal.html:33
+#: djangobb_forum/templates/forum/profile/profile_personality.html:54
+#: djangobb_forum/templates/forum/profile/profile_privacy.html:25
+msgid "Submit"
+msgstr "Senden"
+
+#: djangobb_forum/templates/forum/add_post.html:47
+#: djangobb_forum/templates/forum/edit_post.html:34
+#: djangobb_forum/templates/forum/mail_to.html:25
+#: djangobb_forum/templates/forum/move_topic.html:34
+#: djangobb_forum/templates/forum/report.html:22
+#: djangobb_forum/templates/forum/reputation.html:65
+#: djangobb_forum/templates/forum/reputation_form.html:41
+#: djangobb_forum/templates/forum/search_posts.html:49
+#: djangobb_forum/templates/forum/search_topics.html:60
+#: djangobb_forum/templates/forum/upload_avatar.html:23
+#: templates/authopenid/password_change_form.html:29
+#: templates/authopenid/password_change_form.html:59
+#: templates/messages/compose.html:31
+msgid "Go back"
+msgstr "Zurück"
+
+#: djangobb_forum/templates/forum/add_post.html:55
+msgid "Topic review (newest first)"
+msgstr "Themen Überblick (neueste zuerst)"
+
+#: djangobb_forum/templates/forum/add_post.html:71
+#: djangobb_forum/templates/forum/topic.html:127
+msgid "Quote"
+msgstr "Zitat"
+
+#: djangobb_forum/templates/forum/base.html:52
+#: themes/shockg/templates/forum/base.html:52
+msgid "Board footer"
+msgstr "Fußzeile"
+
+#: djangobb_forum/templates/forum/delete_posts.html:35
+#: djangobb_forum/templates/forum/topic.html:97
+msgid "Edited"
+msgstr "Editiert"
+
+#: djangobb_forum/templates/forum/delete_posts.html:39
+#: djangobb_forum/templates/forum/moderate.html:27
+msgid "Select"
+msgstr "Auswählen"
+
+#: djangobb_forum/templates/forum/delete_posts.html:51
+#: djangobb_forum/templates/forum/moderate.html:68
+#: djangobb_forum/templates/forum/reputation.html:28
+#: djangobb_forum/templates/forum/topic.html:119
+#: templates/messages/view.html:75
+msgid "Delete"
+msgstr "Löschen"
+
+#: djangobb_forum/templates/forum/edit_post.html:14
+msgid "Edit post"
+msgstr "Beitrag editieren"
+
+#: djangobb_forum/templates/forum/edit_post.html:21
+msgid "Edit the post and submit changes"
+msgstr "Beitrag editieren und Änderungen übernehmen"
+
+#: djangobb_forum/templates/forum/edit_post.html:34
+msgid "Save"
+msgstr "Speichern"
+
+#: djangobb_forum/templates/forum/forum.html:28
+#: djangobb_forum/templates/forum/moderate.html:24
+#: djangobb_forum/templates/forum/search_topics.html:23
+msgid "Replies"
+msgstr "Antworten"
+
+#: djangobb_forum/templates/forum/forum.html:29
+#: djangobb_forum/templates/forum/moderate.html:25
+msgid "Views"
+msgstr "Aufrufe"
+
+#: djangobb_forum/templates/forum/forum.html:30
+#: djangobb_forum/templates/forum/index.html:56
+#: djangobb_forum/templates/forum/moderate.html:26
+#: djangobb_forum/templates/forum/search_topics.html:24
+msgid "Last post"
+msgstr "Letzter Beitrag"
+
+#: djangobb_forum/templates/forum/forum.html:42
+#: djangobb_forum/templates/forum/moderate.html:39
+msgid "Sticky:"
+msgstr "Wichtig:"
+
+#: djangobb_forum/templates/forum/forum.html:45
+#: djangobb_forum/templates/forum/forum.html:47
+#: djangobb_forum/templates/forum/forum.html:54
+#: djangobb_forum/templates/forum/forum_row.html:34
+#: djangobb_forum/templates/forum/moderate.html:42
+#: djangobb_forum/templates/forum/moderate.html:44
+#: djangobb_forum/templates/forum/moderate.html:51
+#: djangobb_forum/templates/forum/search_topics.html:35
+#: djangobb_forum/templates/forum/search_topics.html:37
+#: djangobb_forum/templates/forum/search_topics.html:44
+msgid "by"
+msgstr "von"
+
+#: djangobb_forum/templates/forum/forum.html:58
+#: djangobb_forum/templates/forum/moderate.html:56
+msgid "Forum is empty."
+msgstr "Forum ist leer."
+
+#: djangobb_forum/templates/forum/forum.html:79
+msgid "Jump to"
+msgstr "Gehe zu"
+
+#: djangobb_forum/templates/forum/forum.html:90
+#: djangobb_forum/templates/forum/topic.html:199
+msgid "Go"
+msgstr "Los"
+
+#: djangobb_forum/templates/forum/forum.html:94
+msgid "Moderate forum"
+msgstr "Forum moderieren"
+
+#: djangobb_forum/templates/forum/header.html:14
+#: themes/shockg/templates/forum/header.html:15
+msgid "Index"
+msgstr "Index"
+
+#: djangobb_forum/templates/forum/header.html:15
+#: djangobb_forum/templates/forum/users.html:39
+#: djangobb_forum/templates/forum/lofi/header.html:5
+#: themes/shockg/templates/forum/header.html:16
+msgid "User list"
+msgstr "Benutzerliste"
+
+#: djangobb_forum/templates/forum/header.html:16
+#: djangobb_forum/templates/forum/search_form.html:7
+#: djangobb_forum/templates/forum/users.html:28
+#: djangobb_forum/templates/forum/lofi/header.html:4
+#: themes/shockg/templates/forum/header.html:17
+msgid "Search"
+msgstr "Suchen"
+
+#: djangobb_forum/templates/forum/header.html:18
+#: djangobb_forum/templates/forum/profile/profile_admin.html:9
+#: djangobb_forum/templates/forum/profile/profile_menu.html:14
+#: themes/shockg/templates/forum/header.html:19
+msgid "Administration"
+msgstr "Administration"
+
+#: djangobb_forum/templates/forum/header.html:23
+#: djangobb_forum/templates/forum/topic.html:79
+#: templates/messages/view.html:45
+#: themes/shockg/templates/forum/header.html:24
+msgid "PM"
+msgstr "PM"
+
+#: djangobb_forum/templates/forum/header.html:25
+#: themes/shockg/templates/forum/header.html:26
+msgid "Log out"
+msgstr "Ausloggen"
+
+#: djangobb_forum/templates/forum/header.html:27
+#: themes/shockg/templates/forum/header.html:28
+msgid "Log in"
+msgstr "Anmelden"
+
+#: djangobb_forum/templates/forum/header.html:28
+#: themes/shockg/templates/forum/header.html:29
+msgid "Sign up"
+msgstr "Registrieren"
+
+#: djangobb_forum/templates/forum/header.html:35
+#: themes/shockg/templates/forum/header.html:36
+msgid "Logged in as"
+msgstr "Angemeldet als"
+
+#: djangobb_forum/templates/forum/header.html:36
+#: themes/shockg/templates/forum/header.html:37
+msgid "Last visit:"
+msgstr "Letzter Besuch"
+
+#: djangobb_forum/templates/forum/header.html:38
+#: themes/shockg/templates/forum/header.html:39
+msgid "There are new messages"
+msgstr "Sie haben neue Nachrichten"
+
+#: djangobb_forum/templates/forum/header.html:41
+#: themes/shockg/templates/forum/header.html:42
+msgid "You are not logged in."
+msgstr "Sie sind nicht angemeldet."
+
+#: djangobb_forum/templates/forum/header.html:44
+#: themes/shockg/templates/forum/header.html:45
+msgid "There are new reports"
+msgstr "Es gibt neue gemeldete Beiträge"
+
+#: djangobb_forum/templates/forum/header.html:49
+#: themes/shockg/templates/forum/header.html:50
+msgid "Show new posts since last visit"
+msgstr "Zeige neue Beiträge seit letztem Besuch"
+
+#: djangobb_forum/templates/forum/header.html:50
+#: themes/shockg/templates/forum/header.html:51
+msgid "Mark all topics as read"
+msgstr "Alle Themen als gelesen markieren"
+
+#: djangobb_forum/templates/forum/header.html:60
+#: themes/shockg/templates/forum/header.html:61
+msgid "Notice"
+msgstr "Notiz"
+
+#: djangobb_forum/templates/forum/index.html:71
+msgid "Board information"
+msgstr "Foren Informationen"
+
+#: djangobb_forum/templates/forum/index.html:75
+msgid "Board statistics"
+msgstr "Foren Statistik"
+
+#: djangobb_forum/templates/forum/index.html:76
+msgid "Total number of registered users:"
+msgstr "Anzahl der registrierten Benutzer:"
+
+#: djangobb_forum/templates/forum/index.html:77
+msgid "Total number of topics:"
+msgstr "Anzahl der Themen:"
+
+#: djangobb_forum/templates/forum/index.html:78
+msgid "Total number of posts:"
+msgstr "Anzahl der Beiträge:"
+
+#: djangobb_forum/templates/forum/index.html:81
+msgid "User information"
+msgstr "Benutzerinformationen"
+
+#: djangobb_forum/templates/forum/index.html:82
+msgid "Newest registered user:"
+msgstr "Unser neuestes Mitglied:"
+
+#: djangobb_forum/templates/forum/index.html:83
+msgid "Registered users online:"
+msgstr "Mitglieder online:"
+
+#: djangobb_forum/templates/forum/index.html:84
+msgid "Guests online:"
+msgstr "Gäste online:"
+
+#: djangobb_forum/templates/forum/index.html:88
+msgid "Online:"
+msgstr "Online:"
+
+#: djangobb_forum/templates/forum/index.html:101
+#: djangobb_forum/templates/forum/search_posts.html:67
+#: djangobb_forum/templates/forum/search_topics.html:76
+msgid "Search links"
+msgstr "Suche Links"
+
+#: djangobb_forum/templates/forum/index.html:102
+#: djangobb_forum/templates/forum/search_posts.html:68
+#: djangobb_forum/templates/forum/search_topics.html:77
+msgid "Show recent posts"
+msgstr "Neue Beiträge anzeigen"
+
+#: djangobb_forum/templates/forum/index.html:103
+#: djangobb_forum/templates/forum/search_posts.html:69
+#: djangobb_forum/templates/forum/search_topics.html:78
+msgid "Show unanswered posts"
+msgstr "Unbeantwortete Beiträge anzeigen"
+
+#: djangobb_forum/templates/forum/index.html:105
+#: djangobb_forum/templates/forum/search_posts.html:71
+#: djangobb_forum/templates/forum/search_topics.html:80
+msgid "Show your subscribed topics"
+msgstr "Abonnierte Themen anzeigen"
+
+#: djangobb_forum/templates/forum/index.html:106
+#: djangobb_forum/templates/forum/search_posts.html:72
+#: djangobb_forum/templates/forum/search_topics.html:81
+msgid "Show your posts"
+msgstr "Ihre Beiträge anzeigen"
+
+#: djangobb_forum/templates/forum/mail_to.html:7
+msgid "Send e-mail to"
+msgstr "E-Mail senden an"
+
+#: djangobb_forum/templates/forum/mail_to.html:13
+msgid "Write and submit your e-mail message"
+msgstr "Verfassen und senden Sie Ihre E-Mail"
+
+#: djangobb_forum/templates/forum/mail_to.html:21
+msgid ""
+"Please note that by using this form, your e-mail address will be disclosed "
+"to the recipient."
+msgstr ""
+"Bitte beachten Sie, dass dem Empfänger ihre E-Mail Adresse mitgeteilt wird."
+
+#: djangobb_forum/templates/forum/moderate.html:67
+#: djangobb_forum/templates/forum/move_topic.html:34
+msgid "Move"
+msgstr "Verschieben"
+
+#: djangobb_forum/templates/forum/moderate.html:69
+msgid "Open"
+msgstr "Öffnen"
+
+#: djangobb_forum/templates/forum/moderate.html:70
+msgid "Close"
+msgstr "Schließen"
+
+#: djangobb_forum/templates/forum/moderators.html:3
+msgid "Moderated by"
+msgstr "Moderiert von"
+
+#: djangobb_forum/templates/forum/move_topic.html:7
+#: djangobb_forum/templates/forum/topic.html:205
+msgid "Move topic"
+msgstr "Thema verschieben"
+
+#: djangobb_forum/templates/forum/move_topic.html:16
+msgid "Select destination of move"
+msgstr "Ziel auswählen"
+
+#: djangobb_forum/templates/forum/move_topic.html:18
+msgid "Move to"
+msgstr "Verschieben nach"
+
+#: djangobb_forum/templates/forum/pagination.html:3
+msgid "Pages"
+msgstr "Seiten"
+
+#: djangobb_forum/templates/forum/report.html:7
+msgid "Report post"
+msgstr "Beitrag melden"
+
+#: djangobb_forum/templates/forum/report.html:13
+msgid "Please enter a short reason why you are reporting this post"
+msgstr "Bitte geben Sie kurz einen Grund an, warum Sie den Beitrag melden"
+
+#: djangobb_forum/templates/forum/reputation.html:16
+msgid "Reputation of the user"
+msgstr "Karma des Benutzers"
+
+#: djangobb_forum/templates/forum/reputation.html:22
+msgid "From user"
+msgstr "Von Benutzer"
+
+#: djangobb_forum/templates/forum/reputation.html:23
+msgid "For post in topic"
+msgstr "Für einen Beitrag zum Thema"
+
+#: djangobb_forum/templates/forum/reputation.html:25
+msgid "Estimation"
+msgstr "Schätzung"
+
+#: djangobb_forum/templates/forum/reputation.html:26
+#: templates/messages/inbox.html:14 templates/messages/outbox.html:14
+#: trackmaniawars/models.py:48 trackmaniawars/models.py:125
+msgid "Date"
+msgstr "Datum"
+
+#: djangobb_forum/templates/forum/reputation.html:63
+msgid "Are you sure"
+msgstr "Sind Sie sicher"
+
+#: djangobb_forum/templates/forum/reputation_form.html:7
+msgid "Please, fill the form"
+msgstr "Bitte füllen Sie das Formular aus"
+
+#: djangobb_forum/templates/forum/reputation_form.html:17
+msgid "Your name:"
+msgstr "Ihr Name:"
+
+#: djangobb_forum/templates/forum/reputation_form.html:21
+msgid "To whom we change a reputation:"
+msgstr "Karma ändern von:"
+
+#: djangobb_forum/templates/forum/reputation_form.html:29
+msgid "Method:"
+msgstr "Aktion:"
+
+#: djangobb_forum/templates/forum/reputation_form.html:32
+msgid "Add of a reputation"
+msgstr "Karma aufwerten"
+
+#: djangobb_forum/templates/forum/reputation_form.html:34
+msgid "Reduction of a reputation"
+msgstr "Karma abwerten"
+
+#: djangobb_forum/templates/forum/search_form.html:13
+msgid "Enter your search criteria"
+msgstr "Suchkriterien eingeben"
+
+#: djangobb_forum/templates/forum/search_form.html:17
+msgid ""
+"To search by keyword, enter a term or terms to search for. Separate terms "
+"with spaces. To search by author enter the username of the author whose "
+"posts you wish to search for."
+msgstr ""
+"Um nach Schlüsselworten zu suchen, geben sie den Begriff oder die Begriffe "
+"ein. Trennen Sie Begriffe durch Leerzeichen. Um nach dem Autor eines "
+"Beitrags zu suchen, geben Sie seinen Namen ein."
+
+#: djangobb_forum/templates/forum/search_form.html:23
+msgid "Select where to search"
+msgstr "Suchen in"
+
+#: djangobb_forum/templates/forum/search_form.html:29
+msgid "All forums"
+msgstr "Alle Foren"
+
+#: djangobb_forum/templates/forum/search_form.html:43
+msgid ""
+"Choose in which forum you would like to search and if you want to search in "
+"topic subjects, message text or both."
+msgstr ""
+"Wählen Sie aus, in welchen Foren Sie suchen wollen und ob Sie in Thema, in "
+"den Nachrichten oder in beidem suchen wollen."
+
+#: djangobb_forum/templates/forum/search_form.html:50
+msgid "Select how to view search results"
+msgstr "Wählen Sie aus, wie die Suchergebnisse angezeigt werden sollen"
+
+#: djangobb_forum/templates/forum/search_form.html:65
+msgid "You can choose how you wish to sort and show your results."
+msgstr "Sortierung auswählen"
+
+#: djangobb_forum/templates/forum/search_posts.html:24
+msgid "Replies:"
+msgstr "Antworten:"
+
+#: djangobb_forum/templates/forum/search_posts.html:28
+msgid "Go to post"
+msgstr "Gehe zu Beitrag"
+
+#: djangobb_forum/templates/forum/search_posts.html:44
+#: djangobb_forum/templates/forum/search_topics.html:55
+msgid "Info"
+msgstr "Info"
+
+#: djangobb_forum/templates/forum/search_posts.html:48
+#: djangobb_forum/templates/forum/search_topics.html:59
+msgid "Your search returned no hits."
+msgstr "Ihre Suche lieferte keine Ergebnisse"
+
+#: djangobb_forum/templates/forum/search_topics.html:15
+msgid "Search results"
+msgstr "Suchergebnisse"
+
+#: djangobb_forum/templates/forum/topic.html:11
+#: djangobb_forum/templates/forum/topic.html:125
+#: djangobb_forum/templates/forum/topic.html:138
+#: templates/messages/view.html:78
+msgid "Reply"
+msgstr "Antwort"
+
+#: djangobb_forum/templates/forum/topic.html:53
+msgid "From:"
+msgstr "Von:"
+
+#: djangobb_forum/templates/forum/topic.html:55
+#: djangobb_forum/templates/forum/user.html:127
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:73
+#: templates/messages/view.html:31
+msgid "Registered:"
+msgstr "Registriert:"
+
+#: djangobb_forum/templates/forum/topic.html:56
+#: djangobb_forum/templates/forum/user.html:119
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:75
+#: templates/messages/view.html:32
+msgid "Posts:"
+msgstr "Beiträge:"
+
+#: djangobb_forum/templates/forum/topic.html:58
+#: templates/messages/view.html:34
+msgid "IP:"
+msgstr "IP:"
+
+#: djangobb_forum/templates/forum/topic.html:74
+#: djangobb_forum/templates/forum/user.html:42
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:43
+#: templates/messages/view.html:41
+msgid "Send e-mail"
+msgstr "E-Mail senden"
+
+#: djangobb_forum/templates/forum/topic.html:101
+msgid "Attachments:"
+msgstr "Anhänge:"
+
+#: djangobb_forum/templates/forum/topic.html:109
+#: templates/messages/view.html:67
+msgid "Online"
+msgstr "Online"
+
+#: djangobb_forum/templates/forum/topic.html:111
+#: templates/messages/view.html:69
+msgid "Offline"
+msgstr "Offline"
+
+#: djangobb_forum/templates/forum/topic.html:119
+#: templates/messages/view.html:75
+msgid "Are you sure you want to delete this post?"
+msgstr "Sie sind sicher, dass Sie diesen Beitrag löschen möchten?"
+
+#: djangobb_forum/templates/forum/topic.html:123
+msgid "Edit"
+msgstr "Editieren"
+
+#: djangobb_forum/templates/forum/topic.html:144
+msgid "Unsubscribe"
+msgstr "Abonnement abbrechen"
+
+#: djangobb_forum/templates/forum/topic.html:146
+msgid "Subscribe"
+msgstr "Abonnieren"
+
+#: djangobb_forum/templates/forum/topic.html:154
+msgid "Quick post"
+msgstr "Direktantwort"
+
+#: djangobb_forum/templates/forum/topic.html:188
+msgid "Jump to "
+msgstr "Gehe zu"
+
+#: djangobb_forum/templates/forum/topic.html:202
+msgid "Moderator control"
+msgstr "Führerbunker"
+
+#: djangobb_forum/templates/forum/topic.html:204
+msgid "Delete multiple posts"
+msgstr "Mehrere Beiträge löschen"
+
+#: djangobb_forum/templates/forum/topic.html:207
+msgid "Open topic"
+msgstr "Thema öffnen"
+
+#: djangobb_forum/templates/forum/topic.html:209
+msgid "Close topic"
+msgstr "Thema schließen"
+
+#: djangobb_forum/templates/forum/topic.html:212
+msgid "Unstick topic"
+msgstr "Thema nicht mehr als wichtig markieren"
+
+#: djangobb_forum/templates/forum/topic.html:214
+msgid "Stick topic"
+msgstr "Thema als wichtig markieren"
+
+#: djangobb_forum/templates/forum/upload_avatar.html:7
+#: djangobb_forum/templates/forum/profile/profile_personality.html:27
+#: djangobb_forum/templates/forum/profile/profile_personality.html:30
+msgid "Upload avatar"
+msgstr "Avatar hochladen"
+
+#: djangobb_forum/templates/forum/upload_avatar.html:13
+msgid "Enter an avatar file to upload"
+msgstr "Avatar zum Hochladen auswählen"
+
+#: djangobb_forum/templates/forum/upload_avatar.html:19
+#, python-format
+msgid ""
+"An avatar is a small image that will be displayed under your username in "
+"your posts. It must not be any bigger than %(avatar_width)s x "
+"%(avatar_height)s pixels "
+msgstr ""
+"Ein Avatar ist ein kleines Bild, das unter Ihrem Benutzernamen in ihren "
+"Beiträgen angezeigt wird. Es darf nicht größer als %(avatar_width)s x "
+"%(avatar_height)s Pixel sein"
+
+#: djangobb_forum/templates/forum/upload_avatar.html:23
+msgid "Upload"
+msgstr "Hochladen"
+
+#: djangobb_forum/templates/forum/user.html:12
+#: djangobb_forum/templates/forum/profile/profile_menu.html:8
+#: djangobb_forum/templates/forum/profile/profile_messaging.html:15
+#: djangobb_forum/templates/forum/profile/profile_personal.html:9
+msgid "Personal"
+msgstr "Persönlich"
+
+#: djangobb_forum/templates/forum/user.html:15
+msgid "Username:"
+msgstr "Benutzername:"
+
+#: djangobb_forum/templates/forum/user.html:17
+#: djangobb_forum/templates/forum/users.html:46
+msgid "Title"
+msgstr "Titel"
+
+#: djangobb_forum/templates/forum/user.html:19
+msgid "Real name:"
+msgstr "Voller Name:"
+
+#: djangobb_forum/templates/forum/user.html:23
+#: djangobb_forum/templates/forum/user.html:29
+#: djangobb_forum/templates/forum/user.html:35
+#: djangobb_forum/templates/forum/user.html:61
+#: djangobb_forum/templates/forum/user.html:67
+#: djangobb_forum/templates/forum/user.html:73
+#: djangobb_forum/templates/forum/user.html:79
+#: djangobb_forum/templates/forum/user.html:85
+#: djangobb_forum/templates/forum/user.html:107
+#: djangobb_forum/templates/forum/user.html:125
+msgid "(Unknown)"
+msgstr "(Unbekannt)"
+
+#: djangobb_forum/templates/forum/user.html:31
+msgid "Website:"
+msgstr "Homepage:"
+
+#: djangobb_forum/templates/forum/user.html:37
+msgid "E-mail:"
+msgstr "E-Mail:"
+
+#: djangobb_forum/templates/forum/user.html:44
+msgid "(Hidden)"
+msgstr "(Verborgen)"
+
+#: djangobb_forum/templates/forum/user.html:54
+#: djangobb_forum/templates/forum/profile/profile_menu.html:9
+#: djangobb_forum/templates/forum/profile/profile_messaging.html:9
+msgid "Messaging"
+msgstr "Nachrichten"
+
+#: djangobb_forum/templates/forum/user.html:57
+msgid "Jabber:"
+msgstr "Jabber:"
+
+#: djangobb_forum/templates/forum/user.html:63
+msgid "ICQ:"
+msgstr "ICQ:"
+
+#: djangobb_forum/templates/forum/user.html:69
+msgid "MSN Messenger:"
+msgstr "MSN Messenger:"
+
+#: djangobb_forum/templates/forum/user.html:75
+msgid "AOL IM:"
+msgstr "AOL IM:"
+
+#: djangobb_forum/templates/forum/user.html:81
+msgid "Yahoo! Messenger:"
+msgstr "Yahoo Messenger:"
+
+#: djangobb_forum/templates/forum/user.html:94
+#: djangobb_forum/templates/forum/profile/profile_menu.html:10
+#: djangobb_forum/templates/forum/profile/profile_personality.html:9
+msgid "Personality"
+msgstr "Avatar und Signatur"
+
+#: djangobb_forum/templates/forum/user.html:97
+msgid "Avatar:"
+msgstr "Avatar:"
+
+#: djangobb_forum/templates/forum/user.html:101
+msgid "(No avatar)"
+msgstr "(Kein Avatar)"
+
+#: djangobb_forum/templates/forum/user.html:103
+msgid "Signature:"
+msgstr "Signatur:"
+
+#: djangobb_forum/templates/forum/user.html:116
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:71
+msgid "User activity"
+msgstr "User-Aktivität"
+
+#: djangobb_forum/templates/forum/user.html:120
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:76
+msgid "Show all posts"
+msgstr "Zeige alle Beiträge"
+
+#: djangobb_forum/templates/forum/user.html:121
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:74
+msgid "Last post:"
+msgstr "Letzter Beitrag:"
+
+#: djangobb_forum/templates/forum/users.html:7
+msgid "User search"
+msgstr "Benutzer-Suche"
+
+#: djangobb_forum/templates/forum/users.html:12
+msgid "Find and sort users"
+msgstr "Benutzer finden und sortieren"
+
+#: djangobb_forum/templates/forum/users.html:25
+msgid ""
+"Enter a username to search for. The username field can be left blank. Sort "
+"users by name, date registered or number of posts and in ascending/"
+"descending order."
+msgstr ""
+"Geben Sie den Benutzernamen, nach dem Sie suchen, ein. Das Feld kann leer "
+"gelassen werden. Sortieren Sie die Benutzer nach Name, Datum der "
+"Registrierung oder Anzahl der Beiträge in auf- oder absteigender Reihenfolge."
+
+#: djangobb_forum/templates/forum/lofi/forum.html:6
+#: djangobb_forum/templates/forum/lofi/index.html:6
+#: djangobb_forum/templates/forum/lofi/topic.html:6
+msgid "Full Version:"
+msgstr "Vollversion:"
+
+#: djangobb_forum/templates/forum/lofi/forum.html:19
+msgid "IMPORTANT:"
+msgstr "WICHTIG:"
+
+#: djangobb_forum/templates/forum/lofi/forum.html:19
+msgid "replies"
+msgstr "Antworten"
+
+#: djangobb_forum/templates/forum/lofi/index.html:18
+msgid "posts"
+msgstr "Beiträge"
+
+#: djangobb_forum/templates/forum/profile/profile_admin.html:16
+msgid "Delete (administrators only) or ban user"
+msgstr "Löschen (nur Administratoren) oder Benutzer sperren"
+
+#: djangobb_forum/templates/forum/profile/profile_admin.html:18
+msgid "Delete user"
+msgstr "Benutzer löschen"
+
+#: djangobb_forum/templates/forum/profile/profile_admin.html:18
+msgid "Ban user"
+msgstr "Benutzer sperren"
+
+#: djangobb_forum/templates/forum/profile/profile_admin.html:25
+msgid "Set moderator access"
+msgstr "Moderatorzugriff setzen"
+
+#: djangobb_forum/templates/forum/profile/profile_admin.html:27
+msgid ""
+"Choose what forums this user should be allowed to moderate. Note: This only "
+"applies to moderators. Administrators always have full permissions in all "
+"forums."
+msgstr ""
+"Legen Sie fest, welche Foren dieser Benutzer moderieren darf. Hinweis: Dies "
+"gilt nur für Moderatoren. Administratoren haben immer alle Berechtigungen in "
+"allen Foren."
+
+#: djangobb_forum/templates/forum/profile/profile_admin.html:31
+msgid "Update forums"
+msgstr "Foren aktualisieren"
+
+#: djangobb_forum/templates/forum/profile/profile_display.html:9
+#: djangobb_forum/templates/forum/profile/profile_menu.html:11
+msgid "Display"
+msgstr "Anzeigen"
+
+#: djangobb_forum/templates/forum/profile/profile_display.html:15
+msgid "Select your preferred style"
+msgstr "Stil auswählen"
+
+#: djangobb_forum/templates/forum/profile/profile_display.html:18
+msgid "If you like you can use a different visual style for this forum."
+msgstr "Wenn Sie möchten, können Sie das Forum in einem anderen Stil anzeigen."
+
+#: djangobb_forum/templates/forum/profile/profile_display.html:35
+msgid "Post display legend"
+msgstr "Beitragseinstellungen"
+
+#: djangobb_forum/templates/forum/profile/profile_display.html:37
+msgid "Post display info"
+msgstr "Beitrag Anzeigeeinstellungen"
+
+#: djangobb_forum/templates/forum/profile/profile_display.html:45
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:81
+#: djangobb_forum/templates/forum/profile/profile_messaging.html:32
+#: djangobb_forum/templates/forum/profile/profile_personal.html:33
+#: djangobb_forum/templates/forum/profile/profile_personality.html:54
+#: djangobb_forum/templates/forum/profile/profile_privacy.html:25
+msgid "When you update your profile, you will be redirected back to this page."
+msgstr ""
+"Wenn Sie Ihr Profil aktualisieren, werden Sie auf diese Seite umgeleitet."
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:9
+#: djangobb_forum/templates/forum/profile/profile_menu.html:7
+msgid "Essentials"
+msgstr "Benutzerkonto"
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:15
+msgid "Enter your username and password"
+msgstr "Benutzernamen und Passwort eingeben"
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:26
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:28
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:37
+#: templates/registration/registration_form.html:40
+msgid "Enter a valid e-mail address"
+msgstr "Geben Sie eine gültige E-Mail-Adresse ein"
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:51
+msgid "Set your localisation options"
+msgstr "Internationale Einstellung"
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:55
+msgid ""
+"Timezone: For the forum to display times correctly you must select your "
+"local timezone."
+msgstr ""
+"Zeitzone: Damit das Forum die Zeiten korrekt anzeigt, müssen Sie Ihre "
+"Zeitzone eingeben."
+
+#: djangobb_forum/templates/forum/profile/profile_essentials.html:61
+msgid ""
+"Language: You can choose which language you wish to use to view the forum"
+msgstr ""
+"Sprache: Sie können auswählen, in welcher Sprache das Forum angezeigt werden "
+"soll."
+
+#: djangobb_forum/templates/forum/profile/profile_menu.html:3
+msgid "Profile menu"
+msgstr "Profilmenü"
+
+#: djangobb_forum/templates/forum/profile/profile_menu.html:12
+#: djangobb_forum/templates/forum/profile/profile_privacy.html:9
+msgid "Privacy"
+msgstr "Privatsphäre"
+
+#: djangobb_forum/templates/forum/profile/profile_personal.html:15
+msgid "Enter your personal details"
+msgstr "Ihr persönlichen Daten"
+
+#: djangobb_forum/templates/forum/profile/profile_personal.html:21
+msgid "Leave blank to use forum default."
+msgstr "Freilassen, um Standard zu verwenden."
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:15
+msgid "Set your avatar display options"
+msgstr "Avatar Anzeigeoptionen"
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:21
+msgid ""
+"An avatar is a small image that will be displayed with all your posts. You "
+"can upload an avatar by clicking the link below. The checkbox 'Use avatar' "
+"below must be checked in order for the avatar to be visible in your posts."
+msgstr ""
+"Ein avatar ist ein kleines Bild, das neben ihren Beiträgen angzeigt wird. Um "
+"ein Avatar hochzuladen klicken Sie auf den Link unten. Das Auswahlfeld "
+"'Avatar benutzen' muss aktiviert sein wenn das Avatar in Ihren Beiträgen "
+"angezeigt werden soll."
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:24
+msgid "Use avatar."
+msgstr "Avatar benutzen."
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:28
+msgid "Delete avatar"
+msgstr "Avatar löschen"
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:37
+msgid "Compose your signature"
+msgstr "Verfassen Sie Ihre Signatur"
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:40
+msgid ""
+"A signature is a small piece of text that is attached to your posts. In it, "
+"you can enter just about anything you like. Perhaps you would like to enter "
+"your favourite quote or your star sign. It's up to you! In your signature "
+"you can use BBCode if it is allowed in this particular forum. You can see "
+"the features that are allowed/enabled listed below whenever you edit your "
+"signature."
+msgstr ""
+"Eine Signatur ist ein kurzer Text, der an ihren Beiträgen angehängt wird. "
+"Sie kann so gut wie alles enthalten, was sie möchten. Wie wäre es mit ihrem "
+"Lieblingszitat oder ihrem Sternzeichen? Ihre Entscheidung! In ihrer Signatur "
+"können können sie BBCode benutzen, falls dieser in diesem Forum aktiviert "
+"ist. Die verfügbaren Optionen werden unterhalb des Eingabefeldes für die "
+"Signatur angezeigt."
+
+#: djangobb_forum/templates/forum/profile/profile_personality.html:49
+msgid "No signature currently stored in profile."
+msgstr "Keine Signatur gespeichert."
+
+#: djangobb_forum/templates/forum/profile/profile_privacy.html:15
+msgid "Set your privacy options"
+msgstr "Einstellungen zur Privatsphäre ändern"
+
+#: djangobb_forum/templates/forum/profile/profile_privacy.html:18
+msgid ""
+"Select whether you want your e-mail address to be viewable to other users or "
+"not and if you want other users to be able to send you e-mail via the forum "
+"(form e-mail) or not."
+msgstr ""
+"Legen sie fest, ob ihre E-Mail-Adresse für andere Benutzer des Forums "
+"sichtbar sein soll und ob andere Benutzer ihnen E-Mails über das Forum "
+"(Kontaktformular) schicken dürfen."
+
+#: gameserver/models.py:10
+msgid "Servername"
+msgstr "Server Name"
+
+#: gameserver/models.py:11
+msgid "Player Count"
+msgstr "Spieleranzahl"
+
+#: gameserver/models.py:12
+msgid "Max Player Count"
+msgstr "Max Spieleranzahl"
+
+#: gameserver/models.py:13
+msgid "Spectator Count"
+msgstr "Zuschaueranzahl"
+
+#: gameserver/models.py:14
+msgid "Max Spectator Count"
+msgstr "Max Zuschaueranzahl"
+
+#: gameserver/models.py:15
+msgid "Current Map"
+msgstr "Aktuelle Karte"
+
+#: gameserver/models.py:16
+msgid "Current Map Author"
+msgstr "Aktueller Kartenautor"
+
+#: gameserver/models.py:17
+msgid "Next Map"
+msgstr "Nächste Karte"
+
+#: gameserver/models.py:18
+msgid "Next Map Author"
+msgstr "Nächster Kartenautor"
+
+#: gameserver/models.py:19
+msgid "Server Login (for joinlinks)"
+msgstr "Serverkonto (für Beitreten-Links)"
+
+#: gameserver/models.py:20
+msgid "Game Mode"
+msgstr "Spielmodus"
+
+#: gameserver/models.py:21
+msgid "Server Status"
+msgstr "Server Status"
+
+#: gameserver/models.py:22
+msgid "Server / Map Picture"
+msgstr "Server- / Kartenbild"
+
+#: gameserver/models.py:23
+msgid "Updated at"
+msgstr "Aktualisiert um"
+
+#: gamesquad/models.py:11
+msgid "Picture"
+msgstr "Bild"
+
+#: gamesquad/models.py:14 gamesquad/models.py:39
+msgid "Game"
+msgstr "Spiel"
+
+#: gamesquad/models.py:15
+msgid "Games"
+msgstr "Spiele"
+
+#: gamesquad/models.py:29
+msgid "Level"
+msgstr "Level"
+
+#: gamesquad/models.py:30
+msgid "Levels"
+msgstr "Level"
+
+#: gamesquad/models.py:41
+msgid "Tag"
+msgstr "Tag"
+
+#: news/models.py:22
+msgid "Big News Display Image"
+msgstr "Großes News Bild"
+
+#: news/models.py:23
+msgid "Normal News Display Image"
+msgstr "Kleines News Bild"
+
+#: templates/404.html:31 themes/shockg/templates/404.html:31
+msgid "Error 404"
+msgstr "Fehler 404"
+
+#: templates/404.html:36 themes/shockg/templates/404.html:36
+msgid "Page not found."
+msgstr "Seite nicht gefunden"
+
+#: templates/404.html:42 themes/shockg/templates/404.html:42
+msgid "The requested URL was not found on this server."
+msgstr "Die angeforderte URL wurde nicht gefunden."
+
+#: templates/404.html:43 templates/500.html:299
+#: themes/shockg/templates/404.html:43
+msgid "Back home"
+msgstr "Zurück zur Seite"
+
+#: templates/500.html:287
+msgid "Error 500"
+msgstr "Fehler 500"
+
+#: templates/500.html:292
+msgid "Internal server error."
+msgstr "Interner Serverfehler"
+
+#: templates/500.html:298
+msgid ""
+"There is a problem with the resource you are looking for, and it cannot be "
+"displayed."
+msgstr "Es gibt ein Problem mit der Resource, die gezeigt werden soll und wird daher nicht dargestellt."
+
+#: templates/authopenid/associate.html:19
+msgid "Add a new OpenID URL"
+msgstr "Neue OpenID URL"
+
+#: templates/authopenid/associate.html:25
+msgid "OpenId URL :"
+msgstr "OpenId URL :"
+
+#: templates/authopenid/associate.html:26
+msgid "Add OpenID"
+msgstr "OpenID hinzufügen"
+
+#: templates/authopenid/complete.html:7
+msgid "OpenID is verified"
+msgstr "OpenID ist bestätigt"
+
+#: templates/authopenid/complete.html:13
+msgid "Your OpenID is verified! "
+msgstr "Ihre OpenID wurde bestätigt"
+
+#: templates/authopenid/complete.html:14
+msgid ""
+"\n"
+"\t\t\t\t\t<p>Your OpenID can now be associated with a new or existing "
+"membership. You can change the association later in your preferences.</p>\n"
+"\t\t\t\t\t"
+msgstr ""
+
+#: templates/authopenid/complete.html:19
+msgid "Associate your OpenID"
+msgstr ""
+
+#: templates/authopenid/complete.html:20
+msgid ""
+"\n"
+"\t\t\t\t\t<p>If you're joining <strong>Sitename</strong>, associate your "
+"OpenID with a new account. If you're already a member, associate with your "
+"existing account.</p>\n"
+"\t\t\t\t\t"
+msgstr ""
+
+#: templates/authopenid/complete.html:25
+#, fuzzy
+msgid "A new account"
+msgstr "Aufrufe"
+
+#: templates/authopenid/complete.html:30
+#, fuzzy
+msgid "Email"
+msgstr "E-Mail"
+
+#: templates/authopenid/complete.html:31
+msgid "Create account"
+msgstr ""
+
+#: templates/authopenid/complete.html:40
+msgid "An existing account"
+msgstr ""
+
+#: templates/authopenid/complete.html:45
+#, fuzzy
+msgid "Password"
+msgstr "Passwort ändern"
+
+#: templates/authopenid/complete.html:46
+msgid "Verify"
+msgstr ""
+
+#: templates/authopenid/dissociate.html:21
+msgid "Dissociate OpenID URL"
+msgstr ""
+
+#: templates/authopenid/dissociate.html:23
+msgid "Dissociate OpenID"
+msgstr ""
+
+#: templates/authopenid/failure.html:11
+msgid "OpenID failed"
+msgstr ""
+
+#: templates/authopenid/password_change_form.html:12
+#, fuzzy
+msgid "Set password"
+msgstr "Passwort ändern"
+
+#: templates/authopenid/password_change_form.html:19
+msgid ""
+"Please enter your new password twice so we can verify you typed it in "
+"correctly."
+msgstr ""
+
+#: templates/authopenid/password_change_form.html:21
+#: templates/authopenid/password_change_form.html:49
+#, fuzzy
+msgid "New password:"
+msgstr "Passwort ändern"
+
+#: templates/authopenid/password_change_form.html:23
+#: templates/authopenid/password_change_form.html:52
+#, fuzzy
+msgid "Confirm password:"
+msgstr "Passwort ändern"
+
+#: templates/authopenid/password_change_form.html:29
+#: templates/authopenid/password_change_form.html:59
+#, fuzzy
+msgid "Change my password"
+msgstr "Passwort ändern"
+
+#: templates/authopenid/password_change_form.html:37
+msgid "Password change"
+msgstr ""
+
+#: templates/authopenid/password_change_form.html:44
+msgid ""
+"Please enter your old password, for security's sake, and then enter your new "
+"password twice so we can verify you typed it in correctly."
+msgstr ""
+
+#: templates/authopenid/password_change_form.html:46
+#, fuzzy
+msgid "Old password:"
+msgstr "Passwort ändern"
+
+#: templates/authopenid/signin.html:19 templates/authopenid/signin.html:48
+msgid "Login"
+msgstr ""
+
+#: templates/authopenid/signin.html:32
+#, fuzzy
+msgid "Sign in using your username and password"
+msgstr "Benutzernamen und Passwort eingeben"
+
+#: templates/authopenid/signin.html:38
+msgid ""
+"If you have not registered or have forgotten your password click on the "
+"appropriate link below."
+msgstr ""
+
+#: templates/authopenid/signin.html:40
+#, fuzzy
+msgid "Not registered yet?"
+msgstr "Unser neuestes Mitglied:"
+
+#: templates/authopenid/signin.html:41
+msgid "Forgotten your password?"
+msgstr ""
+
+#: templates/authopenid/signin.html:57
+msgid "Sign In Using Your OpenID URL"
+msgstr ""
+
+#: templates/authopenid/signin.html:59
+msgid "Please click your account provider:"
+msgstr ""
+
+#: templates/authopenid/signin.html:65
+msgid "Sign in with OpenID"
+msgstr ""
+
+#: templates/messages/compose.html:9
+msgid "Send a message"
+msgstr ""
+
+#: templates/messages/compose.html:31
+msgid "Send"
+msgstr ""
+
+#: templates/messages/inbox.html:6 templates/messages/menu_pm.html:7
+msgid "Inbox"
+msgstr ""
+
+#: templates/messages/inbox.html:13
+msgid "Sender"
+msgstr ""
+
+#: templates/messages/inbox.html:38 templates/messages/outbox.html:34
+#, fuzzy
+msgid "No messages"
+msgstr "Nachricht"
+
+#: templates/messages/menu_pm.html:3
+#, fuzzy
+msgid "Private Messages"
+msgstr "Nachricht"
+
+#: templates/messages/menu_pm.html:8
+msgid "Sent"
+msgstr ""
+
+#: templates/messages/menu_pm.html:9
+msgid "Send new message"
+msgstr ""
+
+#: templates/messages/outbox.html:6
+msgid "Outbox"
+msgstr ""
+
+#: templates/messages/outbox.html:13
+msgid "Receiver"
+msgstr ""
+
+#: templates/registration/activate.html:9
+#, fuzzy
+msgid "Activation"
+msgstr "Schätzung"
+
+#: templates/registration/activate.html:11
+msgid "Your account is now activated."
+msgstr ""
+
+#: templates/registration/registration_complete.html:11
+msgid "Thank you!"
+msgstr ""
+
+#: templates/registration/registration_complete.html:12
+msgid ""
+"An email has been sent to you. You need to click link in it to activate your "
+"account."
+msgstr ""
+
+#: templates/registration/registration_form.html:7
+#: templates/registration/registration_form.html:58
+#, fuzzy
+msgid "Register"
+msgstr "Registriert"
+
+#: templates/registration/registration_form.html:13
+#, fuzzy
+msgid "Important information"
+msgstr "Foren Informationen"
+
+#: templates/registration/registration_form.html:14
+msgid ""
+"Registration will grant you access to a number of features and capabilities "
+"otherwise unavailable. These functions include the ability to edit and "
+"delete posts, design your own signature that accompanies your posts and much "
+"more. If you have any questions regarding this forum you should ask an "
+"administrator."
+msgstr ""
+
+#: templates/registration/registration_form.html:15
+msgid ""
+"Below is a form you must fill out in order to register. Once you are "
+"registered you should visit your profile and review the different settings "
+"you can change. The fields below only make up a small part of all the "
+"settings you can alter in your profile."
+msgstr ""
+
+#: templates/registration/registration_form.html:19
+msgid "Please enter a username"
+msgstr ""
+
+#: templates/registration/registration_form.html:28
+msgid "Please enter and confirm your chosen password"
+msgstr ""
+
+#: templates/registration/registration_form.html:34
+msgid "Passwords are case sensitive."
+msgstr ""
+
+#: templates/registration/registration_form.html:50
+msgid "Solve this captcha"
+msgstr ""
+
+#: trackmaniawars/admin.py:18 trackmaniawars/models.py:49
+msgid "War Mode"
+msgstr "War Modus"
+
+#: trackmaniawars/models.py:13
+msgid "Team Rounds 2on2"
+msgstr ""
+
+#: trackmaniawars/models.py:14
+msgid "Team Rounds 3on3"
+msgstr ""
+
+#: trackmaniawars/models.py:15
+msgid "Team Rounds 4on4"
+msgstr ""
+
+#: trackmaniawars/models.py:16
+msgid "Team Rounds 5on5"
+msgstr ""
+
+#: trackmaniawars/models.py:17
+msgid "Time Attack 2on2"
+msgstr ""
+
+#: trackmaniawars/models.py:18
+msgid "Time Attack 3on3"
+msgstr ""
+
+#: trackmaniawars/models.py:19
+msgid "Time Attack 4on4"
+msgstr ""
+
+#: trackmaniawars/models.py:20
+msgid "Time Attack 5on5"
+msgstr ""
+
+#: trackmaniawars/models.py:26
+msgid "Incomplete"
+msgstr "Unvollständig"
+
+#: trackmaniawars/models.py:27
+msgid "Planned"
+msgstr "Geplant"
+
+#: trackmaniawars/models.py:28
+msgid "Running"
+msgstr "Laufend"
+
+#: trackmaniawars/models.py:29
+msgid "Finished"
+msgstr "Beendet"
+
+#: trackmaniawars/models.py:30
+msgid "Aborted"
+msgstr "Abgebrochen"
+
+#: trackmaniawars/models.py:31
+msgid "Cancelled"
+msgstr "Abgesagt"
+
+#: trackmaniawars/models.py:35
+msgid "Nations"
+msgstr "Nations"
+
+#: trackmaniawars/models.py:36
+msgid "Nations Forever"
+msgstr "Nations Forever"
+
+#: trackmaniawars/models.py:37
+msgid "United"
+msgstr "United"
+
+#: trackmaniawars/models.py:44 trackmaniawars/models.py:121
+msgid "Opponent"
+msgstr "Gegner"
+
+#: trackmaniawars/models.py:45 trackmaniawars/models.py:122
+msgid "Opponent Clantag"
+msgstr "Gegner Clantag"
+
+#: trackmaniawars/models.py:46 trackmaniawars/models.py:123
+msgid "Homepage"
+msgstr "Webseite"
+
+#: trackmaniawars/models.py:47 trackmaniawars/models.py:124
+msgid "Contact"
+msgstr "Kontakt (ICQ, Mail o.ä.)"
+
+#: trackmaniawars/models.py:50 trackmaniawars/models.py:127
+msgid "Server"
+msgstr "Server"
+
+#: trackmaniawars/models.py:52 trackmaniawars/models.py:128
+msgid "Maps per team"
+msgstr "Karten pro Team"
+
+#: trackmaniawars/models.py:53 trackmaniawars/models.py:129
+msgid "Notes"
+msgstr "Bemerkungen"
+
+#: trackmaniawars/models.py:54 trackmaniawars/models.py:96
+msgid "Our Points"
+msgstr "Unsere Punkte"
+
+#: trackmaniawars/models.py:55 trackmaniawars/models.py:97
+msgid "Opponent Points"
+msgstr "Gegner Punkte"
+
+#: trackmaniawars/models.py:56
+msgid "Resultcomment"
+msgstr "Ergebniskommentar"
+
+#: trackmaniawars/models.py:91
+msgid "Mapname"
+msgstr "Kartenname"
+
+#: trackmaniawars/models.py:93
+msgid "Author time"
+msgstr "Autor Zeit"
+
+#: trackmaniawars/models.py:94
+msgid "TMX ID"
+msgstr "TMX ID"
+
+#: trackmaniawars/models.py:95
+msgid "TMX Nation"
+msgstr "TMX Nation"
+
+#: trackmaniawars/models.py:98
+msgid "Map File"
+msgstr "Kartendatei"
+
+#: trackmaniawars/models.py:99
+msgid "Map Thumbnail"
+msgstr "Kartenbild"
+
+#: trackmaniawars/models.py:113
+msgid "Map uploaded already?"
+msgstr "Karte bereits hochgeladen?"
+
+#: trackmaniawars/models.py:126
+msgid "Warmode"
+msgstr "War Modus"

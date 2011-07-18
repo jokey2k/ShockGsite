@@ -6,6 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth.models import User
 
 from news import settings as news_settings
+from djangobb_forum.util import convert_text_to_html
 from specialfields import FramedImageField
 
 class NewsItem(models.Model):
@@ -51,3 +52,10 @@ class NewsItem(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ('news.detail', [str(self.id)])
+
+    def save(self):
+        self.render_text()
+        super(NewsItem, self).save()
+
+    def render_text(self):
+        self.rendered_text = convert_text_to_html(self.text, 'bbcode')

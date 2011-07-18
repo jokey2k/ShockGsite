@@ -5,7 +5,7 @@ import re
 
 PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -202,3 +202,5 @@ if USE_DEBUGBAR:
     	'INTERCEPT_REDIRECTS': True,
     	'HIDE_DJANGO_SQL': False,
 	}
+
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'

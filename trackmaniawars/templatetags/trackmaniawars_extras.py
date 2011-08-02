@@ -14,7 +14,7 @@ def trackmaniawars_upcoming(context):
         raise ImproperlyConfigured('Enable the request context processor!')
     request = context['request']
     
-    entries = War.objects.filter(status=2).order_by('-datetime')[:3]
+    entries = War.objects.filter(status=2).order_by('datetime')[:3]
     wars = [war for war in entries]
     if len(wars) < 3:
         for war in range(3-len(wars)):
